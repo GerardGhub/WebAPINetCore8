@@ -13,5 +13,18 @@ namespace WebAPINetCore8.Controllers
         {
             this._service = service;
         }
+
+        [HttpGet]
+        public IActionResult Get()
+        {
+            var data = this._service.Getall();
+            if (data == null)
+            {
+                return NotFound();
+            }
+            return Ok(data);
+        }
+
+
     }
 }

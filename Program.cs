@@ -1,5 +1,8 @@
+using Microsoft.EntityFrameworkCore;
 using WebAPINetCore8.Container;
 using WebAPINetCore8.Service;
+using System.Globalization;
+using WebAPINetCore8.Repos;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<ICustomerService, CustomerService>();
+builder.Services.AddDbContext<LearndataContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("apicon")));
+
+
+//Set default culture
+CultureInfo.DefaultThreadCurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
+CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.CreateSpecificCulture("en-US");
 
 var app = builder.Build();
 

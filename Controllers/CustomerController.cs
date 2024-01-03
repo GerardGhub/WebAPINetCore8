@@ -15,9 +15,9 @@ namespace WebAPINetCore8.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public async Task<IActionResult> GetAll()
         {
-            var data = this._service.Getall();
+            var data = await this._service.Getall();
             if (data == null)
             {
                 return NotFound();

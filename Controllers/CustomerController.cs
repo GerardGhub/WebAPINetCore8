@@ -2,12 +2,14 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using WebAPINetCore8.Modal;
 using WebAPINetCore8.Service;
 
 namespace WebAPINetCore8.Controllers
 {
     //[DisableCors]
+    [EnableRateLimiting("fixedwindow")]
     [Route("api/[controller]")]
     [ApiController]
     public class CustomerController : ControllerBase
@@ -30,6 +32,7 @@ namespace WebAPINetCore8.Controllers
             return Ok(data);
         }
 
+        [DisableRateLimiting]
         [HttpGet("Getbycode")]
         public async Task<IActionResult> Getbycode(string code)
         {

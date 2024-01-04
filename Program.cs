@@ -6,6 +6,7 @@ using WebAPINetCore8.Repos;
 using AutoMapper;
 using WebAPINetCore8.Helper;
 using Serilog;
+using Microsoft.AspNetCore.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +42,17 @@ builder.Services.AddCors(p => p.AddDefaultPolicy(build =>
 }));
 
 
+// Adding Policy for Rate Limiting
+builder.Services.AddRateLimiter(_ => _.AddFixedWindowLimiter(policyName: "fixedwindow", options =>
+{
+    options.Window = TimeSpan.FromSeconds(10);
+    options.PermitLimit = 1;
+    options.QueueLimit = 0;
+    options.QueueProcessingOrder = System.Threading.RateLimiting.QueueProcessingOrder.OldestFirst;
+}).RejectionStatusCode=401);
+
+
+
 // adding Logpath configuration on Serilog
 
 string logpath = builder.Configuration.GetSection("Logging:Logpath").Value;
@@ -59,6 +71,7 @@ CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.CreateSpecificCulture("e
 
 var app = builder.Build();
 
+app.UseRateLimiter();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

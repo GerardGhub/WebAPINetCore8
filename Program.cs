@@ -5,6 +5,7 @@ using System.Globalization;
 using WebAPINetCore8.Repos;
 using AutoMapper;
 using WebAPINetCore8.Helper;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,6 +23,18 @@ var automapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperH
 IMapper mapper = automapper.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
+
+// adding Logpath configuration on Serilog
+
+string logpath = builder.Configuration.GetSection("Logging:Logpath").Value;
+var _logger = new LoggerConfiguration()
+    //.MinimumLevel.Debug()
+    .MinimumLevel.Information()
+    .MinimumLevel.Override("microsoft", Serilog.Events.LogEventLevel.Warning)
+    .Enrich.FromLogContext()
+    .WriteTo.File(logpath)
+    .CreateLogger();
+builder.Logging.AddSerilog(_logger);
 
 //Set default culture
 CultureInfo.DefaultThreadCurrentCulture = CultureInfo.CreateSpecificCulture("en-US");

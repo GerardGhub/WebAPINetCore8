@@ -13,10 +13,12 @@ namespace WebAPINetCore8.Container
     {
         private readonly LearndataContext _context;
         private readonly IMapper _mapper;
-        public CustomerService(LearndataContext context, IMapper mapper)
+        private readonly ILogger<CustomerService> _logger;
+        public CustomerService(LearndataContext context, IMapper mapper, ILogger<CustomerService> logger)
         {
             this._context = context;
             this._mapper = mapper;
+            this._logger = logger;
         }
 
         public async Task<APIResponse> Create(CustomerModal data)
@@ -24,6 +26,7 @@ namespace WebAPINetCore8.Container
             APIResponse response = new APIResponse();
             try
             {
+                this._logger.LogInformation("Create Begins");
                 TblCustomer customer = this._mapper.Map<CustomerModal, TblCustomer>(data);
                 await this._context.TblCustomers.AddAsync(customer);
                 await this._context.SaveChangesAsync();
@@ -34,6 +37,7 @@ namespace WebAPINetCore8.Container
             {
                 response.ResponseCode = 400;
                 response.Errormessage = ex.Message;
+                this._logger.LogError(ex.Message, ex);
             }
 
             return response;

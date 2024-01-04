@@ -1,0 +1,117 @@
+2024-01-04 12:03:45.956 +08:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-01-04 12:03:46.042 +08:00 [DBG] Hosting starting
+2024-01-04 12:03:46.378 +08:00 [DBG] Connection id "0HN0CR8J3RC1B" received FIN.
+2024-01-04 12:03:46.378 +08:00 [DBG] Connection id "0HN0CR8J3RC1A" received FIN.
+2024-01-04 12:03:46.378 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 12:03:46.385 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 12:03:46.386 +08:00 [DBG] Loaded hosting startup assembly WebAPINetCore8
+2024-01-04 12:03:46.386 +08:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-01-04 12:03:46.386 +08:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-01-04 12:03:46.387 +08:00 [DBG] Connection id "0HN0CR8J3RC1A" accepted.
+2024-01-04 12:03:46.387 +08:00 [DBG] Connection id "0HN0CR8J3RC1B" accepted.
+2024-01-04 12:03:46.389 +08:00 [DBG] Connection id "0HN0CR8J3RC1B" started.
+2024-01-04 12:03:46.389 +08:00 [DBG] Connection id "0HN0CR8J3RC1A" started.
+2024-01-04 12:03:46.389 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 12:03:46.390 +08:00 [INF] Hosting environment: Development
+2024-01-04 12:03:46.392 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 12:03:46.392 +08:00 [DBG] Hosting started
+2024-01-04 12:03:46.408 +08:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-01-04 12:03:46.408 +08:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-01-04 12:03:46.464 +08:00 [DBG] Connection id "0HN0CR8J3RC1A" stopped.
+2024-01-04 12:03:46.464 +08:00 [DBG] Connection id "0HN0CR8J3RC1B" stopped.
+2024-01-04 12:03:46.468 +08:00 [DBG] Connection id "0HN0CR8J3RC1B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-04 12:03:46.468 +08:00 [DBG] Connection id "0HN0CR8J3RC1A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-01-04 12:03:46.782 +08:00 [DBG] Connection id "0HN0CR8J3RC1C" accepted.
+2024-01-04 12:03:46.784 +08:00 [DBG] Connection id "0HN0CR8J3RC1C" started.
+2024-01-04 12:03:46.892 +08:00 [DBG] Connection 0HN0CR8J3RC1C established using the following protocol: "Tls12"
+2024-01-04 12:03:46.970 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 12:03:47.128 +08:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-01-04 12:03:47.147 +08:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-01-04 12:03:47.148 +08:00 [DBG] Request did not match any endpoints
+2024-01-04 12:03:47.288 +08:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-01-04 12:03:47.318 +08:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-01-04 12:03:47.324 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 357.7994ms
+2024-01-04 12:03:47.424 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 12:03:47.424 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 12:03:47.431 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 7.2621ms
+2024-01-04 12:03:47.488 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.6519ms
+2024-01-04 12:03:47.883 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 12:03:47.885 +08:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-01-04 12:03:47.885 +08:00 [DBG] Request did not match any endpoints
+2024-01-04 12:03:48.086 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 203.653ms
+2024-01-04 12:04:28.352 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Customer/Create - application/json 145
+2024-01-04 12:04:28.366 +08:00 [DBG] 1 candidate(s) found for the request path '/api/Customer/Create'
+2024-01-04 12:04:28.375 +08:00 [DBG] Endpoint 'WebAPINetCore8.Controllers.CustomerController.Create (WebAPINetCore8)' with route pattern 'api/Customer/Create' is valid for the request path '/api/Customer/Create'
+2024-01-04 12:04:28.375 +08:00 [DBG] Request matched endpoint 'WebAPINetCore8.Controllers.CustomerController.Create (WebAPINetCore8)'
+2024-01-04 12:04:28.379 +08:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-01-04 12:04:28.383 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.Create (WebAPINetCore8)'
+2024-01-04 12:04:28.402 +08:00 [INF] Route matched with {action = "Create", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(WebAPINetCore8.Modal.CustomerModal) on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 12:04:28.403 +08:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-01-04 12:04:28.403 +08:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2024-01-04 12:04:28.404 +08:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-01-04 12:04:28.404 +08:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-01-04 12:04:28.404 +08:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-01-04 12:04:28.405 +08:00 [DBG] Executing controller factory for controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8)
+2024-01-04 12:04:28.573 +08:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-01-04 12:04:28.588 +08:00 [DBG] Executed controller factory for controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8)
+2024-01-04 12:04:28.608 +08:00 [DBG] Attempting to bind parameter '_data' of type 'WebAPINetCore8.Modal.CustomerModal' ...
+2024-01-04 12:04:28.612 +08:00 [DBG] Attempting to bind parameter '_data' of type 'WebAPINetCore8.Modal.CustomerModal' using the name '' in request data ...
+2024-01-04 12:04:28.613 +08:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2024-01-04 12:04:28.620 +08:00 [DBG] Connection id "0HN0CR8J3RC1C", Request id "0HN0CR8J3RC1C:00000009": started reading request body.
+2024-01-04 12:04:28.621 +08:00 [DBG] Connection id "0HN0CR8J3RC1C", Request id "0HN0CR8J3RC1C:00000009": done reading request body.
+2024-01-04 12:04:28.625 +08:00 [DBG] JSON input formatter succeeded, deserializing to type 'WebAPINetCore8.Modal.CustomerModal'
+2024-01-04 12:04:28.625 +08:00 [DBG] Done attempting to bind parameter '_data' of type 'WebAPINetCore8.Modal.CustomerModal'.
+2024-01-04 12:04:28.625 +08:00 [DBG] Done attempting to bind parameter '_data' of type 'WebAPINetCore8.Modal.CustomerModal'.
+2024-01-04 12:04:28.625 +08:00 [DBG] Attempting to validate the bound parameter '_data' of type 'WebAPINetCore8.Modal.CustomerModal' ...
+2024-01-04 12:04:28.631 +08:00 [DBG] Done attempting to validate the bound parameter '_data' of type 'WebAPINetCore8.Modal.CustomerModal'.
+2024-01-04 12:04:28.636 +08:00 [INF] Create Begins
+2024-01-04 12:04:29.065 +08:00 [DBG] Entity Framework Core 8.0.0 initialized 'LearndataContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-01-04 12:04:29.134 +08:00 [DBG] Context 'LearndataContext' started tracking 'TblCustomer' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-04 12:04:29.138 +08:00 [DBG] SaveChanges starting for 'LearndataContext'.
+2024-01-04 12:04:29.141 +08:00 [DBG] DetectChanges starting for 'LearndataContext'.
+2024-01-04 12:04:29.153 +08:00 [DBG] DetectChanges completed for 'LearndataContext'.
+2024-01-04 12:04:29.202 +08:00 [DBG] Creating DbConnection.
+2024-01-04 12:04:29.249 +08:00 [DBG] Created DbConnection. (44ms).
+2024-01-04 12:04:29.251 +08:00 [DBG] Opening connection to database 'test_db' on server 'LPE-0069\SQLEXPRESS2014'.
+2024-01-04 12:04:29.596 +08:00 [DBG] Opened connection to database 'test_db' on server 'LPE-0069\SQLEXPRESS2014'.
+2024-01-04 12:04:29.603 +08:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-01-04 12:04:29.608 +08:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2024-01-04 12:04:29.617 +08:00 [DBG] Initialized DbCommand for 'ExecuteReader' (14ms).
+2024-01-04 12:04:29.624 +08:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 50) (DbType = AnsiString), @p3='?' (DbType = Boolean), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_customer] ([Code], [Creditlimit], [Email], [IsActive], [Name], [Phone], [Taxcode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2024-01-04 12:04:29.677 +08:00 [INF] Executed DbCommand (50ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 50) (DbType = AnsiString), @p3='?' (DbType = Boolean), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_customer] ([Code], [Creditlimit], [Email], [IsActive], [Name], [Phone], [Taxcode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2024-01-04 12:04:29.681 +08:00 [DBG] Closing data reader to 'test_db' on server 'LPE-0069\SQLEXPRESS2014'.
+2024-01-04 12:04:29.686 +08:00 [DBG] A data reader for 'test_db' on server 'LPE-0069\SQLEXPRESS2014' is being disposed after spending 5ms reading results.
+2024-01-04 12:04:29.688 +08:00 [DBG] Closing connection to database 'test_db' on server 'LPE-0069\SQLEXPRESS2014'.
+2024-01-04 12:04:29.691 +08:00 [DBG] Closed connection to database 'test_db' on server 'LPE-0069\SQLEXPRESS2014' (2ms).
+2024-01-04 12:04:29.699 +08:00 [DBG] An entity of type 'TblCustomer' tracked by 'LearndataContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-01-04 12:04:29.700 +08:00 [DBG] SaveChanges completed for 'LearndataContext' with 1 entities written to the database.
+2024-01-04 12:04:29.703 +08:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2024-01-04 12:04:29.704 +08:00 [DBG] No information found on request to perform content negotiation.
+2024-01-04 12:04:29.704 +08:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-01-04 12:04:29.704 +08:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-01-04 12:04:29.705 +08:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-01-04 12:04:29.705 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Helper.APIResponse'.
+2024-01-04 12:04:29.711 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Create (WebAPINetCore8) in 1303.1462ms
+2024-01-04 12:04:29.712 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Create (WebAPINetCore8)'
+2024-01-04 12:04:29.714 +08:00 [DBG] 'LearndataContext' disposed.
+2024-01-04 12:04:29.716 +08:00 [DBG] Disposing connection to database 'test_db' on server 'LPE-0069\SQLEXPRESS2014'.
+2024-01-04 12:04:29.717 +08:00 [DBG] Disposed connection to database '' on server '' (0ms).
+2024-01-04 12:04:29.718 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Customer/Create - 200 null application/json; charset=utf-8 1366.2619ms

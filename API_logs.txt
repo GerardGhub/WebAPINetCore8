@@ -1057,3 +1057,153 @@ Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime
 DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
 2024-01-04 16:41:48.429 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
 2024-01-04 16:41:48.429 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - 401 0 null 68.6477ms
+2024-01-04 17:16:53.186 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 17:16:53.801 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 17:16:53.804 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 17:16:53.809 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 17:16:53.813 +08:00 [INF] Hosting environment: Development
+2024-01-04 17:16:53.815 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 17:16:59.245 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 17:16:59.534 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 295.2461ms
+2024-01-04 17:16:59.612 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 17:16:59.616 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 17:16:59.618 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 6.1585ms
+2024-01-04 17:16:59.652 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 35.7116ms
+2024-01-04 17:17:00.073 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 17:17:00.201 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 129.2455ms
+2024-01-04 17:17:12.185 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 17:17:12.336 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 17:17:12.366 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 17:17:13.928 +08:00 [INF] Executed DbCommand (59ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 17:17:14.048 +08:00 [INF] Executed DbCommand (14ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-01-04 17:17:14.201 +08:00 [INF] Executed DbCommand (64ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_refreshtoken] ([userid], [refreshtoken], [tokenid])
+VALUES (@p0, @p1, @p2);
+2024-01-04 17:17:14.217 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.TokenResponse'.
+2024-01-04 17:17:14.226 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 1854.2134ms
+2024-01-04 17:17:14.226 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 17:17:14.234 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 200 null application/json; charset=utf-8 2049.0943ms
+2024-01-04 17:17:39.115 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 17:17:39.118 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 17:17:39.119 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 17:17:39.150 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 17:17:39.157 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-01-04 17:17:39.181 +08:00 [INF] Executed DbCommand (14ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refreshtoken] SET [refreshtoken] = @p0
+OUTPUT 1
+WHERE [userid] = @p1;
+2024-01-04 17:17:39.185 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.TokenResponse'.
+2024-01-04 17:17:39.186 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 66.1414ms
+2024-01-04 17:17:39.186 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 17:17:39.186 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 200 null application/json; charset=utf-8 71.8336ms
+2024-01-04 17:18:31.117 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 17:18:31.119 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 17:18:31.119 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 17:18:31.167 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 17:18:31.171 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-01-04 17:18:31.177 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refreshtoken] SET [refreshtoken] = @p0
+OUTPUT 1
+WHERE [userid] = @p1;
+2024-01-04 17:18:31.177 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.TokenResponse'.
+2024-01-04 17:18:31.177 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 58.3439ms
+2024-01-04 17:18:31.177 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 17:18:31.178 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 200 null application/json; charset=utf-8 61.343ms
+2024-01-04 17:53:35.404 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 17:53:35.758 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 17:53:35.762 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 17:53:35.768 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 17:53:35.771 +08:00 [INF] Hosting environment: Development
+2024-01-04 17:53:35.775 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 17:53:46.341 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 17:53:46.599 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 263.0908ms
+2024-01-04 17:53:46.615 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 17:53:46.625 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 9.6994ms
+2024-01-04 17:53:46.682 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 17:53:46.724 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.1029ms
+2024-01-04 17:53:47.068 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 17:53:47.198 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 130.3101ms
+2024-01-04 17:54:12.934 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 17:54:12.942 +08:00 [INF] CORS policy execution successful.
+2024-01-04 17:54:13.072 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 17:54:13.096 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 17:54:14.607 +08:00 [INF] Executed DbCommand (62ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 17:54:14.724 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-01-04 17:54:14.791 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refreshtoken] SET [refreshtoken] = @p0
+OUTPUT 1
+WHERE [userid] = @p1;
+2024-01-04 17:54:14.806 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.TokenResponse'.
+2024-01-04 17:54:14.812 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 1712.2697ms
+2024-01-04 17:54:14.812 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 17:54:14.818 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Authorize/GenerateToken - 200 null application/json; charset=utf-8 1884.5574ms
+2024-01-04 17:54:48.108 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Authorize/GenerateRefreshToken - application/json 283
+2024-01-04 17:54:48.109 +08:00 [INF] CORS policy execution successful.
+2024-01-04 17:54:48.111 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateRefreshToken (WebAPINetCore8)'
+2024-01-04 17:54:48.114 +08:00 [INF] Route matched with {action = "GenerateRefreshToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateRefreshToken(WebAPINetCore8.Modal.TokenResponse) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 17:54:48.230 +08:00 [INF] Executed DbCommand (92ms) [Parameters=[@__token_RefreshToken_0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[refreshtoken] = @__token_RefreshToken_0
+2024-01-04 17:54:48.316 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__8__locals1_token_RefreshToken_1='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0 AND [t].[refreshtoken] = @__8__locals1_token_RefreshToken_1
+2024-01-04 17:54:48.328 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-01-04 17:54:48.335 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (Size = 50) (DbType = AnsiString), @p0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [tbl_refreshtoken] SET [refreshtoken] = @p0
+OUTPUT 1
+WHERE [userid] = @p1;
+2024-01-04 17:54:48.336 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.TokenResponse'.
+2024-01-04 17:54:48.336 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateRefreshToken (WebAPINetCore8) in 221.7601ms
+2024-01-04 17:54:48.336 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateRefreshToken (WebAPINetCore8)'
+2024-01-04 17:54:48.337 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Authorize/GenerateRefreshToken - 200 null application/json; charset=utf-8 229.3875ms
+2024-01-04 17:55:14.872 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Authorize/GenerateRefreshToken - application/json 283
+2024-01-04 17:55:14.873 +08:00 [INF] CORS policy execution successful.
+2024-01-04 17:55:14.875 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateRefreshToken (WebAPINetCore8)'
+2024-01-04 17:55:14.875 +08:00 [INF] Route matched with {action = "GenerateRefreshToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateRefreshToken(WebAPINetCore8.Modal.TokenResponse) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 17:55:14.939 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__token_RefreshToken_0='?' (Size = 8000) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[refreshtoken] = @__token_RefreshToken_0
+2024-01-04 17:55:14.942 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-04 17:55:14.953 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateRefreshToken (WebAPINetCore8) in 77.3541ms
+2024-01-04 17:55:14.953 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateRefreshToken (WebAPINetCore8)'
+2024-01-04 17:55:14.954 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Authorize/GenerateRefreshToken - 401 null application/problem+json; charset=utf-8 82.5375ms

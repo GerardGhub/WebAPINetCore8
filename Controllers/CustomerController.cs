@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Cors;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.AspNetCore.Mvc;
 using WebAPINetCore8.Modal;
@@ -6,6 +7,7 @@ using WebAPINetCore8.Service;
 
 namespace WebAPINetCore8.Controllers
 {
+    //[DisableCors]
     [Route("api/[controller]")]
     [ApiController]
     public class CustomerController : ControllerBase
@@ -16,6 +18,7 @@ namespace WebAPINetCore8.Controllers
             this._service = service;
         }
 
+        //[EnableCors("corspolicy1")]
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

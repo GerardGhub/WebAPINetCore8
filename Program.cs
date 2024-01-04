@@ -23,6 +23,23 @@ var automapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperH
 IMapper mapper = automapper.CreateMapper();
 builder.Services.AddSingleton(mapper);
 
+// Configuration for the CORS
+builder.Services.AddCors(p => p.AddPolicy("corspolicy", build =>
+{
+    build.WithOrigins("https://domain1.com", "https://domain2.com").AllowAnyMethod().AllowAnyHeader();
+}));
+
+builder.Services.AddCors(p => p.AddPolicy("corspolicy1", build =>
+{
+    build.WithOrigins("https://domain3.com").AllowAnyMethod().AllowAnyHeader();
+    //build.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
+
+builder.Services.AddCors(p => p.AddDefaultPolicy(build =>
+{
+    build.WithOrigins("*").AllowAnyMethod().AllowAnyHeader();
+}));
+
 
 // adding Logpath configuration on Serilog
 
@@ -48,6 +65,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//app.UseCors("corspolicy");
+
+app.UseCors();
 
 app.UseHttpsRedirection();
 

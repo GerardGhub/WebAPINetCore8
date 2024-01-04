@@ -568,3 +568,492 @@ WHERE [t].[Code] = @__p_0
 2024-01-04 15:24:05.114 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8) in 8.9682ms
 2024-01-04 15:24:05.114 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
 2024-01-04 15:24:05.114 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - 200 null application/json; charset=utf-8 48.6634ms
+2024-01-04 16:07:08.209 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 16:07:08.590 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 16:07:08.594 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 16:07:08.600 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 16:07:08.603 +08:00 [INF] Hosting environment: Development
+2024-01-04 16:07:08.605 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 16:07:16.169 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 16:07:16.652 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 492.5695ms
+2024-01-04 16:07:16.662 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 16:07:16.674 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 11.8656ms
+2024-01-04 16:07:16.725 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 16:07:16.770 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 44.599ms
+2024-01-04 16:07:17.244 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 16:07:17.493 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 249.0755ms
+2024-01-04 16:07:37.867 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - null 0
+2024-01-04 16:07:39.272 +08:00 [INF] Executed DbCommand (66ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 16:07:39.326 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:07:39.343 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:07:39.374 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-04 16:07:39.389 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 43.7427ms
+2024-01-04 16:07:39.389 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:07:39.394 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 415 null application/problem+json; charset=utf-8 1526.801ms
+2024-01-04 16:08:54.734 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 43
+2024-01-04 16:08:54.755 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 16:08:54.757 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:08:54.757 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:08:54.914 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE 0 = 1
+2024-01-04 16:08:54.916 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-04 16:08:54.917 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 158.9813ms
+2024-01-04 16:08:54.917 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:08:54.917 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 401 null application/problem+json; charset=utf-8 182.9045ms
+2024-01-04 16:09:00.849 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 43
+2024-01-04 16:09:00.905 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 16:09:00.905 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:09:00.905 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:09:00.912 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE 0 = 1
+2024-01-04 16:09:00.912 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-04 16:09:00.913 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 7.355ms
+2024-01-04 16:09:00.913 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:09:00.913 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 401 null application/problem+json; charset=utf-8 64.3544ms
+2024-01-04 16:09:27.078 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:09:27.082 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 16:09:27.083 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:09:27.083 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:09:27.091 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:09:27.393 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-04 16:09:27.393 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 310.3047ms
+2024-01-04 16:09:27.393 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:09:27.393 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 200 null text/plain; charset=utf-8 315.8718ms
+2024-01-04 16:12:27.170 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:12:27.179 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 16:12:27.180 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:12:27.180 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:12:27.187 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:12:27.188 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-04 16:12:27.188 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 7.5717ms
+2024-01-04 16:12:27.188 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:12:27.188 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 200 null text/plain; charset=utf-8 54.8643ms
+2024-01-04 16:25:18.544 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 16:25:18.902 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 16:25:18.905 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 16:25:18.911 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 16:25:18.915 +08:00 [INF] Hosting environment: Development
+2024-01-04 16:25:18.918 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 16:25:27.930 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 16:25:28.182 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 264.9073ms
+2024-01-04 16:25:28.236 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 16:25:28.241 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.0087ms
+2024-01-04 16:25:28.275 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 16:25:28.324 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.9981ms
+2024-01-04 16:25:28.716 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 16:25:28.959 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 243.5421ms
+2024-01-04 16:25:29.327 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 16:25:29.611 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-01-04 16:25:29.626 +08:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 16:25:31.127 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-01-04 16:25:31.216 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebAPINetCore8.Modal.CustomerModal, WebAPINetCore8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-04 16:25:31.249 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8) in 1620.3213ms
+2024-01-04 16:25:31.249 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-01-04 16:25:31.255 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 200 null application/json; charset=utf-8 1928.4895ms
+2024-01-04 16:25:50.503 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - null null
+2024-01-04 16:25:50.508 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-04 16:25:50.513 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-04 16:25:50.513 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - 401 0 null 10.4181ms
+2024-01-04 16:25:52.686 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - null null
+2024-01-04 16:25:52.688 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-04 16:25:52.689 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-04 16:25:52.689 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - 401 0 null 2.712ms
+2024-01-04 16:26:33.727 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:26:33.728 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:26:33.737 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:26:33.900 +08:00 [INF] Executed DbCommand (59ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:26:34.067 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 329.8031ms
+2024-01-04 16:26:34.068 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:26:34.138 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '144' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at WebAPINetCore8.Controllers.AuthorizeController.GenerateToken(UserCred userCred) in D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8\Controllers\AuthorizeController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-04 16:26:34.147 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 500 null text/plain; charset=utf-8 420.5002ms
+2024-01-04 16:26:56.026 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 16:26:56.318 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 16:26:56.322 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 16:26:56.328 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 16:26:56.331 +08:00 [INF] Hosting environment: Development
+2024-01-04 16:26:56.335 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 16:26:59.641 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:26:59.834 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:26:59.849 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:27:01.222 +08:00 [INF] Executed DbCommand (55ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:27:01.410 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 1552.7923ms
+2024-01-04 16:27:01.411 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:01.463 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '192' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at WebAPINetCore8.Controllers.AuthorizeController.GenerateToken(UserCred userCred) in D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8\Controllers\AuthorizeController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-04 16:27:01.477 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 500 null text/plain; charset=utf-8 1844.6624ms
+2024-01-04 16:27:02.828 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:27:02.831 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:02.832 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:27:02.862 +08:00 [INF] Executed DbCommand (14ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:27:02.909 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 77.4742ms
+2024-01-04 16:27:02.910 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:02.920 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '192' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at WebAPINetCore8.Controllers.AuthorizeController.GenerateToken(UserCred userCred) in D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8\Controllers\AuthorizeController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-04 16:27:02.922 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 500 null text/plain; charset=utf-8 94.3994ms
+2024-01-04 16:27:07.242 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 16:27:07.405 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 163.0856ms
+2024-01-04 16:27:07.416 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 16:27:07.425 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 8.8446ms
+2024-01-04 16:27:07.469 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 16:27:07.515 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.9025ms
+2024-01-04 16:27:07.863 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 16:27:08.020 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 157.3635ms
+2024-01-04 16:27:09.710 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:27:09.713 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:09.713 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:27:09.775 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:27:09.823 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 109.7209ms
+2024-01-04 16:27:09.824 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:09.834 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '192' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at WebAPINetCore8.Controllers.AuthorizeController.GenerateToken(UserCred userCred) in D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8\Controllers\AuthorizeController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-04 16:27:09.835 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 500 null text/plain; charset=utf-8 125.2004ms
+2024-01-04 16:27:10.788 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:27:10.789 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:10.789 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:27:10.798 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:27:10.832 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 43.1824ms
+2024-01-04 16:27:10.833 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:10.838 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '192' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at WebAPINetCore8.Controllers.AuthorizeController.GenerateToken(UserCred userCred) in D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8\Controllers\AuthorizeController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-04 16:27:10.841 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 500 null text/plain; charset=utf-8 52.4932ms
+2024-01-04 16:27:52.502 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:27:52.502 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:52.502 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:27:52.511 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:27:52.546 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 43.4855ms
+2024-01-04 16:27:52.546 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:52.553 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '192' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at WebAPINetCore8.Controllers.AuthorizeController.GenerateToken(UserCred userCred) in D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8\Controllers\AuthorizeController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-04 16:27:52.561 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 500 null text/plain; charset=utf-8 58.9499ms
+2024-01-04 16:27:53.559 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:27:53.559 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:53.559 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:27:53.564 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:27:53.596 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 37.5291ms
+2024-01-04 16:27:53.597 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:53.606 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '192' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at WebAPINetCore8.Controllers.AuthorizeController.GenerateToken(UserCred userCred) in D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8\Controllers\AuthorizeController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-04 16:27:53.607 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 500 null text/plain; charset=utf-8 48.3726ms
+2024-01-04 16:27:54.321 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:27:54.322 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:54.322 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:27:54.340 +08:00 [INF] Executed DbCommand (8ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:27:54.375 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 53.2002ms
+2024-01-04 16:27:54.376 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:27:54.381 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.ArgumentOutOfRangeException: IDX10720: Unable to create KeyedHashAlgorithm for algorithm 'HS256', the key size must be greater than: '256' bits, key has '192' bits. (Parameter 'keyBytes')
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.ValidateKeySize(Byte[] keyBytes, String algorithm, Int32 expectedNumberOfBytes)
+   at Microsoft.IdentityModel.Tokens.CryptoProviderFactory.CreateKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.CreateKeyedHashAlgorithm()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.CreateInstance()
+   at Microsoft.IdentityModel.Tokens.DisposableObjectPool`1.Allocate()
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.GetKeyedHashAlgorithm(Byte[] keyBytes, String algorithm)
+   at Microsoft.IdentityModel.Tokens.SymmetricSignatureProvider.Sign(Byte[] input)
+   at Microsoft.IdentityModel.JsonWebTokens.JwtTokenUtilities.CreateEncodedSignature(String input, SigningCredentials signingCredentials)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateJwtSecurityTokenPrivate(String issuer, String audience, ClaimsIdentity subject, Nullable`1 notBefore, Nullable`1 expires, Nullable`1 issuedAt, SigningCredentials signingCredentials, EncryptingCredentials encryptingCredentials, IDictionary`2 claimCollection, String tokenType, IDictionary`2 additionalHeaderClaims, IDictionary`2 additionalInnerHeaderClaims)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.CreateToken(SecurityTokenDescriptor tokenDescriptor)
+   at WebAPINetCore8.Controllers.AuthorizeController.GenerateToken(UserCred userCred) in D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8\Controllers\AuthorizeController.cs:line 46
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-04 16:27:54.382 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 500 null text/plain; charset=utf-8 60.647ms
+2024-01-04 16:28:38.404 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 16:28:38.781 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 16:28:38.785 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 16:28:38.792 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 16:28:38.805 +08:00 [INF] Hosting environment: Development
+2024-01-04 16:28:38.808 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 16:28:39.396 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 16:28:39.696 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 305.4748ms
+2024-01-04 16:28:39.734 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 16:28:39.744 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 9.526ms
+2024-01-04 16:28:39.787 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 16:28:39.843 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.6106ms
+2024-01-04 16:28:40.228 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 16:28:40.375 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 147.852ms
+2024-01-04 16:29:37.473 +08:00 [INF] Request starting HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 47
+2024-01-04 16:29:37.609 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:29:37.625 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-01-04 16:29:38.863 +08:00 [INF] Executed DbCommand (54ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-01-04 16:29:38.949 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-04 16:29:38.954 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 1325.8714ms
+2024-01-04 16:29:38.954 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-01-04 16:29:38.962 +08:00 [INF] Request finished HTTP/1.1 POST https://localhost:7095/api/Authorize/GenerateToken - 200 null text/plain; charset=utf-8 1488.7847ms
+2024-01-04 16:29:45.037 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - null null
+2024-01-04 16:29:45.047 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-04 16:29:45.050 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-04 16:29:45.050 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - 401 0 null 13.8285ms
+2024-01-04 16:29:50.621 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - null null
+2024-01-04 16:29:50.698 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 16:29:50.704 +08:00 [INF] Route matched with {action = "Getbycode", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getbycode(System.String) on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 16:29:50.767 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+WHERE [t].[Code] = @__p_0
+2024-01-04 16:29:50.791 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.CustomerModal'.
+2024-01-04 16:29:50.799 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8) in 95.2343ms
+2024-01-04 16:29:50.799 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 16:29:50.800 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - 200 null application/json; charset=utf-8 179.0334ms
+2024-01-04 16:41:48.361 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - null null
+2024-01-04 16:41:48.377 +08:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/4/2024 8:30:08 AM', Current time (UTC): '1/4/2024 8:41:48 AM'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2024-01-04 16:41:48.422 +08:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '1/4/2024 8:30:08 AM', Current time (UTC): '1/4/2024 8:41:48 AM'.
+2024-01-04 16:41:48.424 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-04 16:41:48.429 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-01-04 16:41:48.429 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - 401 0 null 68.6477ms

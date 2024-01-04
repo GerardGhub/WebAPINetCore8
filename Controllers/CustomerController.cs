@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Cors;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.AspNetCore.Mvc;
@@ -8,6 +9,7 @@ using WebAPINetCore8.Service;
 
 namespace WebAPINetCore8.Controllers
 {
+    [Authorize]
     //[DisableCors]
     [EnableRateLimiting("fixedwindow")]
     [Route("api/[controller]")]
@@ -20,8 +22,9 @@ namespace WebAPINetCore8.Controllers
             this._service = service;
         }
 
+        [AllowAnonymous]
         //[EnableCors("corspolicy1")]
-        [HttpGet]
+        [HttpGet("GetAll")]
         public async Task<IActionResult> GetAll()
         {
             var data = await this._service.Getall();

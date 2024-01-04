@@ -202,3 +202,369 @@ WHERE [t].[Code] = @__p_0
 2024-01-04 14:17:50.227 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8) in 48.674ms
 2024-01-04 14:17:50.227 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
 2024-01-04 14:17:50.227 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer/Getbycode?code=1 - 200 null application/json; charset=utf-8 50.1338ms
+2024-01-04 15:04:10.750 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 15:04:11.031 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 15:04:11.033 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 15:04:11.036 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 15:04:11.038 +08:00 [INF] Hosting environment: Development
+2024-01-04 15:04:11.039 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 15:04:20.972 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 15:04:21.221 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 254.3914ms
+2024-01-04 15:04:21.238 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 15:04:21.244 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 6.4706ms
+2024-01-04 15:04:21.301 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 15:04:21.340 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.1129ms
+2024-01-04 15:04:21.685 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 15:04:21.823 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 137.516ms
+2024-01-04 15:04:39.780 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer - null null
+2024-01-04 15:04:39.964 +08:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2024-01-04 15:04:39.970 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-04 15:04:39.975 +08:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2024-01-04 15:04:39.977 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer - 401 0 null 197.9683ms
+2024-01-04 15:06:36.080 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:06:36.281 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.FormatException: The format of value '' is invalid.
+   at System.Net.Http.Headers.HttpHeaderParser.ParseValue(String value, Object storeValue, Int32& index)
+   at System.Net.Http.Headers.AuthenticationHeaderValue.Parse(String input)
+   at WebAPINetCore8.Helper.BasicAuthenticationHandler.HandleAuthenticateAsync() in D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8\Helper\BasicAuthenticationHandler.cs:line 29
+   at Microsoft.AspNetCore.Authentication.AuthenticationHandler`1.AuthenticateAsync()
+   at Microsoft.AspNetCore.Authentication.AuthenticationService.AuthenticateAsync(HttpContext context, String scheme)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-01-04 15:06:36.297 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 500 null text/plain; charset=utf-8 216.8864ms
+2024-01-04 15:08:35.777 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:08:36.916 +08:00 [INF] Executed DbCommand (58ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:08:36.993 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 1219.9181ms
+2024-01-04 15:08:36.995 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:08:42.567 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:08:42.592 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:08:42.593 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 26.6197ms
+2024-01-04 15:08:42.593 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:08:56.638 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:08:56.699 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:08:56.700 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 62.2302ms
+2024-01-04 15:08:56.700 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:10:13.888 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:10:13.896 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:10:13.898 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 9.9016ms
+2024-01-04 15:10:13.898 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:10:51.895 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:10:51.902 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:10:51.903 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 7.879ms
+2024-01-04 15:10:51.903 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:10:52.973 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:10:52.980 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:10:52.982 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 8.5652ms
+2024-01-04 15:10:52.982 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:11:22.680 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:11:22.690 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:11:22.690 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 10.6815ms
+2024-01-04 15:11:22.691 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:11:53.615 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:11:53.619 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:11:53.619 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 4.6732ms
+2024-01-04 15:11:53.620 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:11:54.732 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:11:54.736 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:11:54.737 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 4.9422ms
+2024-01-04 15:11:54.737 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:12:37.799 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 15:12:38.090 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 15:12:38.092 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 15:12:38.096 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 15:12:38.097 +08:00 [INF] Hosting environment: Development
+2024-01-04 15:12:38.098 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 15:12:42.581 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:12:43.640 +08:00 [INF] Executed DbCommand (45ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:12:43.713 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 1134.811ms
+2024-01-04 15:12:43.714 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:12:45.388 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:12:45.411 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:12:45.415 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 27.4587ms
+2024-01-04 15:12:45.416 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:12:46.441 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:12:46.493 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:12:46.494 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 53.3661ms
+2024-01-04 15:12:46.494 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:12:46.954 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 15:12:47.158 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 203.8767ms
+2024-01-04 15:12:47.193 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 15:12:47.204 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 10.2062ms
+2024-01-04 15:12:47.253 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 15:12:47.311 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 58.492ms
+2024-01-04 15:12:47.510 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:12:47.520 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:12:47.521 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 10.3133ms
+2024-01-04 15:12:47.521 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:12:47.767 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 15:12:47.917 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.7238ms
+2024-01-04 15:12:52.719 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer - null null
+2024-01-04 15:12:52.736 +08:00 [INF] BasicAuthentication was not authenticated. Failure message: No header found
+2024-01-04 15:12:52.739 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-01-04 15:12:52.742 +08:00 [INF] AuthenticationScheme: BasicAuthentication was challenged.
+2024-01-04 15:12:52.743 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer - 401 0 null 24.117ms
+2024-01-04 15:12:54.347 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer - null null
+2024-01-04 15:12:54.348 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer - 401 0 null 1.532ms
+2024-01-04 15:12:54.879 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer - null null
+2024-01-04 15:12:54.880 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer - 401 0 null 1.1022ms
+2024-01-04 15:12:55.399 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer - null null
+2024-01-04 15:12:55.400 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer - 401 0 null 1.0622ms
+2024-01-04 15:12:55.943 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer - null null
+2024-01-04 15:12:55.944 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer - 401 0 null 0.4534ms
+2024-01-04 15:12:56.630 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer - null null
+2024-01-04 15:12:56.631 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer - 401 0 null 0.7478ms
+2024-01-04 15:13:26.693 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:13:26.701 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:13:26.701 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 404 0 null 8.2583ms
+2024-01-04 15:13:26.702 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetAll, Response status code: 404
+2024-01-04 15:13:55.151 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer - null null
+2024-01-04 15:13:55.158 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:13:55.160 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-01-04 15:13:55.174 +08:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 15:13:55.191 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-01-04 15:13:55.230 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebAPINetCore8.Modal.CustomerModal, WebAPINetCore8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-04 15:13:55.246 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8) in 68.9998ms
+2024-01-04 15:13:55.247 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-01-04 15:13:55.247 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer - 200 null application/json; charset=utf-8 95.821ms
+2024-01-04 15:15:01.104 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 15:15:01.537 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 15:15:01.541 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 15:15:01.546 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 15:15:01.548 +08:00 [INF] Hosting environment: Development
+2024-01-04 15:15:01.550 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 15:15:08.119 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 15:15:08.370 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 254.5691ms
+2024-01-04 15:15:08.398 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 15:15:08.406 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 7.2844ms
+2024-01-04 15:15:08.438 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 15:15:08.512 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.6449ms
+2024-01-04 15:15:08.951 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 15:15:09.188 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 237.234ms
+2024-01-04 15:17:04.598 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 15:17:04.852 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 15:17:04.855 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 15:17:04.860 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 15:17:04.862 +08:00 [INF] Hosting environment: Development
+2024-01-04 15:17:04.863 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 15:17:13.438 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 15:17:13.654 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 223.0798ms
+2024-01-04 15:17:13.682 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 15:17:13.688 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.5855ms
+2024-01-04 15:17:13.719 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 15:17:13.769 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.1419ms
+2024-01-04 15:17:14.097 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 15:17:14.232 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 135.1261ms
+2024-01-04 15:17:24.163 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:18:42.144 +08:00 [INF] Executed DbCommand (47ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:19:30.165 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 15:19:30.581 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 15:19:30.585 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 15:19:30.593 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 15:19:30.597 +08:00 [INF] Hosting environment: Development
+2024-01-04 15:19:30.600 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 15:19:35.664 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:19:37.252 +08:00 [INF] Executed DbCommand (49ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:19:37.331 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-01-04 15:19:37.347 +08:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 15:19:37.370 +08:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-01-04 15:19:37.416 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebAPINetCore8.Modal.CustomerModal, WebAPINetCore8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-04 15:19:37.464 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8) in 113.082ms
+2024-01-04 15:19:37.465 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-01-04 15:19:37.474 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 200 null application/json; charset=utf-8 1812.8156ms
+2024-01-04 15:19:39.045 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 15:19:39.337 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 291.9107ms
+2024-01-04 15:19:39.378 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 15:19:39.393 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 15.158ms
+2024-01-04 15:19:39.439 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 15:19:39.596 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 157.3752ms
+2024-01-04 15:19:40.234 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 15:19:40.754 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 519.4386ms
+2024-01-04 15:19:41.124 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:19:41.127 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 401 0 null 3.5567ms
+2024-01-04 15:19:43.262 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:19:43.262 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 401 0 null 0.4726ms
+2024-01-04 15:19:44.298 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:19:44.299 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 401 0 null 0.4445ms
+2024-01-04 15:19:50.898 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-01-04 15:19:50.920 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:19:50.922 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-01-04 15:19:50.923 +08:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 15:19:50.927 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-01-04 15:19:50.930 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebAPINetCore8.Modal.CustomerModal, WebAPINetCore8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-01-04 15:19:50.930 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8) in 7.5252ms
+2024-01-04 15:19:50.930 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-01-04 15:19:50.931 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetAll - 200 null application/json; charset=utf-8 32.2502ms
+2024-01-04 15:22:39.136 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 15:22:39.446 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 15:22:39.449 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 15:22:39.456 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 15:22:39.459 +08:00 [INF] Hosting environment: Development
+2024-01-04 15:22:39.461 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 15:22:40.007 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 15:22:40.233 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 229.7549ms
+2024-01-04 15:22:40.268 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 15:22:40.274 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 6.0761ms
+2024-01-04 15:22:40.290 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 15:22:40.350 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 60.1286ms
+2024-01-04 15:22:40.738 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 15:22:40.903 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 164.2147ms
+2024-01-04 15:23:07.684 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?1 - null null
+2024-01-04 15:23:09.221 +08:00 [INF] Executed DbCommand (85ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:23:09.293 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:23:09.315 +08:00 [INF] Route matched with {action = "Getbycode", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getbycode(System.String) on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 15:23:09.348 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.CustomerModal'.
+2024-01-04 15:23:09.361 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8) in 43.3708ms
+2024-01-04 15:23:09.361 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:23:09.367 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?1 - 200 null application/json; charset=utf-8 1683.4551ms
+2024-01-04 15:23:18.822 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?2 - null null
+2024-01-04 15:23:18.853 +08:00 [INF] Executed DbCommand (9ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:23:18.855 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:23:18.855 +08:00 [INF] Route matched with {action = "Getbycode", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getbycode(System.String) on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 15:23:18.856 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.CustomerModal'.
+2024-01-04 15:23:18.856 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8) in 1.0657ms
+2024-01-04 15:23:18.856 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:23:18.856 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?2 - 200 null application/json; charset=utf-8 34.2208ms
+2024-01-04 15:23:28.006 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode=1 - null null
+2024-01-04 15:23:28.053 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:23:28.055 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode=1 - 404 0 null 48.7676ms
+2024-01-04 15:23:28.057 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetBycode=1, Response status code: 404
+2024-01-04 15:23:32.608 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode=2 - null null
+2024-01-04 15:23:32.616 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:23:32.617 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode=2 - 404 0 null 9.0048ms
+2024-01-04 15:23:32.617 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/api/Customer/GetBycode=2, Response status code: 404
+2024-01-04 15:23:44.765 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=2 - null null
+2024-01-04 15:23:44.774 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:23:44.783 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:23:44.783 +08:00 [INF] Route matched with {action = "Getbycode", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getbycode(System.String) on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 15:23:44.821 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[@__p_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+WHERE [t].[Code] = @__p_0
+2024-01-04 15:23:44.849 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.CustomerModal'.
+2024-01-04 15:23:44.850 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8) in 67.2402ms
+2024-01-04 15:23:44.851 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:23:44.851 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=2 - 200 null application/json; charset=utf-8 86.077ms
+2024-01-04 15:23:50.541 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - null null
+2024-01-04 15:23:50.546 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:23:50.547 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:23:50.547 +08:00 [INF] Route matched with {action = "Getbycode", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getbycode(System.String) on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 15:23:50.555 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+WHERE [t].[Code] = @__p_0
+2024-01-04 15:23:50.557 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.CustomerModal'.
+2024-01-04 15:23:50.557 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8) in 10.1931ms
+2024-01-04 15:23:50.557 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:23:50.558 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - 200 null application/json; charset=utf-8 16.9518ms
+2024-01-04 15:24:00.508 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=13 - null null
+2024-01-04 15:24:00.517 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:24:00.517 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:24:00.517 +08:00 [INF] Route matched with {action = "Getbycode", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getbycode(System.String) on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 15:24:00.521 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[@__p_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+WHERE [t].[Code] = @__p_0
+2024-01-04 15:24:00.522 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.CustomerModal'.
+2024-01-04 15:24:00.522 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8) in 4.4451ms
+2024-01-04 15:24:00.522 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:24:00.522 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=13 - 200 null application/json; charset=utf-8 13.6748ms
+2024-01-04 15:24:05.066 +08:00 [INF] Request starting HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - null null
+2024-01-04 15:24:05.104 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString), @__password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__username_0 AND [t].[password] = @__password_1
+2024-01-04 15:24:05.105 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:24:05.105 +08:00 [INF] Route matched with {action = "Getbycode", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Getbycode(System.String) on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-04 15:24:05.113 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__p_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+WHERE [t].[Code] = @__p_0
+2024-01-04 15:24:05.114 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.CustomerModal'.
+2024-01-04 15:24:05.114 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8) in 8.9682ms
+2024-01-04 15:24:05.114 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Getbycode (WebAPINetCore8)'
+2024-01-04 15:24:05.114 +08:00 [INF] Request finished HTTP/1.1 GET https://localhost:7095/api/Customer/GetBycode?code=1 - 200 null application/json; charset=utf-8 48.6634ms

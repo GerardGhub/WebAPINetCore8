@@ -7,6 +7,7 @@ using AutoMapper;
 using WebAPINetCore8.Helper;
 using Serilog;
 using Microsoft.AspNetCore.RateLimiting;
+using Microsoft.AspNetCore.Authentication;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<ICustomerService, CustomerService>();
 builder.Services.AddDbContext<LearndataContext>(o => o.UseSqlServer(builder.Configuration.GetConnectionString("apicon")));
+
+//Adding Basic Auth
+builder.Services.AddAuthentication("BasicAuthentication").AddScheme<AuthenticationSchemeOptions, BasicAuthenticationHandler>("BasicAuthentication", null);
+
+
 
 // Adding autommaper
 var automapper = new MapperConfiguration(item => item.AddProfile(new AutoMapperHandler()));
@@ -84,6 +90,8 @@ if (app.Environment.IsDevelopment())
 app.UseCors();
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

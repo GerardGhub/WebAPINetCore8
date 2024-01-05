@@ -1500,3 +1500,72 @@ WHERE [t].[refreshtoken] = @__token_RefreshToken_0
 2024-01-05 09:58:52.586 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.remove (WebAPINetCore8) in 5.2357ms
 2024-01-05 09:58:52.586 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.remove (WebAPINetCore8)'
 2024-01-05 09:58:52.586 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/remove?productcode=02323 - 200 null text/plain; charset=utf-8 11.9902ms
+2024-01-05 11:11:34.120 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-05 11:11:34.403 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-05 11:11:34.406 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-05 11:11:34.411 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 11:11:34.413 +08:00 [INF] Hosting environment: Development
+2024-01-05 11:11:34.416 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-05 11:11:41.656 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-05 11:11:42.014 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 364.4271ms
+2024-01-05 11:11:42.030 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 11:11:42.039 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 10.1442ms
+2024-01-05 11:11:42.089 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-05 11:11:42.135 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 46.2348ms
+2024-01-05 11:11:42.466 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-05 11:11:42.635 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 168.8793ms
+2024-01-05 11:13:13.904 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/multiremove?productcode=2323 - null null
+2024-01-05 11:13:13.999 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.multiremove (WebAPINetCore8)'
+2024-01-05 11:13:14.025 +08:00 [INF] Route matched with {action = "multiremove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] multiremove(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 11:13:14.495 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-05 11:13:14.499 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.multiremove (WebAPINetCore8) in 470.7855ms
+2024-01-05 11:13:14.500 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.multiremove (WebAPINetCore8)'
+2024-01-05 11:13:14.501 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/multiremove?productcode=2323 - 200 null text/plain; charset=utf-8 597.9402ms
+2024-01-05 11:13:56.370 +08:00 [INF] Request starting HTTP/2 PUT https://localhost:7095/api/Product/DBMultiUploadImage?productcode=2221 - multipart/form-data; boundary=----WebKitFormBoundaryd43QcQZpR7cM7pOd 548375
+2024-01-05 11:13:56.382 +08:00 [INF] CORS policy execution successful.
+2024-01-05 11:13:56.383 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.DBMultiUploadImage (WebAPINetCore8)'
+2024-01-05 11:13:56.388 +08:00 [INF] Route matched with {action = "DBMultiUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] DBMultiUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 11:13:58.443 +08:00 [INF] Executed DbCommand (560ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_productimage] ([productcode], [productimage])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1);
+2024-01-05 11:13:58.496 +08:00 [INF] Executed DbCommand (6ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_productimage] ([productcode], [productimage])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1);
+2024-01-05 11:13:58.503 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = -1) (DbType = Binary)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_productimage] ([productcode], [productimage])
+OUTPUT INSERTED.[id]
+VALUES (@p0, @p1);
+2024-01-05 11:13:58.505 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Helper.APIResponse'.
+2024-01-05 11:13:58.511 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.DBMultiUploadImage (WebAPINetCore8) in 2122.42ms
+2024-01-05 11:13:58.512 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.DBMultiUploadImage (WebAPINetCore8)'
+2024-01-05 11:13:58.521 +08:00 [INF] Request finished HTTP/2 PUT https://localhost:7095/api/Product/DBMultiUploadImage?productcode=2221 - 200 null application/json; charset=utf-8 2151.6406ms
+2024-01-05 11:14:22.959 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetDBMultiImage?productcode=2221 - null null
+2024-01-05 11:14:22.961 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetDBMultiImage (WebAPINetCore8)'
+2024-01-05 11:14:22.965 +08:00 [INF] Route matched with {action = "GetDBMultiImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetDBMultiImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 11:14:23.246 +08:00 [INF] Executed DbCommand (21ms) [Parameters=[@__productcode_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[id], [t].[productcode], [t].[productimage]
+FROM [tbl_productimage] AS [t]
+WHERE [t].[productcode] = @__productcode_0
+2024-01-05 11:14:23.267 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-01-05 11:14:23.284 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetDBMultiImage (WebAPINetCore8) in 318.7244ms
+2024-01-05 11:14:23.284 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetDBMultiImage (WebAPINetCore8)'
+2024-01-05 11:14:23.285 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetDBMultiImage?productcode=2221 - 200 null application/json; charset=utf-8 326.6124ms
+2024-01-05 11:14:36.675 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/dbdownload?productcode=2221 - null null
+2024-01-05 11:14:36.676 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.dbdownload (WebAPINetCore8)'
+2024-01-05 11:14:36.682 +08:00 [INF] Route matched with {action = "dbdownload", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] dbdownload(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 11:14:36.712 +08:00 [INF] Executed DbCommand (7ms) [Parameters=[@__productcode_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[id], [t].[productcode], [t].[productimage]
+FROM [tbl_productimage] AS [t]
+WHERE [t].[productcode] = @__productcode_0
+2024-01-05 11:14:36.721 +08:00 [INF] Executing FileContentResult, sending file with download name '2221.png' ...
+2024-01-05 11:14:36.729 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.dbdownload (WebAPINetCore8) in 47.1817ms
+2024-01-05 11:14:36.729 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.dbdownload (WebAPINetCore8)'
+2024-01-05 11:14:36.730 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/dbdownload?productcode=2221 - 200 215612 image/png 54.5522ms

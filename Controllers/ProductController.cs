@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using WebAPINetCore8.Helper;
+using WebAPINetCore8.Repos;
 
 namespace WebAPINetCore8.Controllers
 {
@@ -9,10 +11,12 @@ namespace WebAPINetCore8.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IWebHostEnvironment _environment;
+        private readonly LearndataContext _context;
 
-        public ProductController(IWebHostEnvironment environment)
+        public ProductController(IWebHostEnvironment environment, LearndataContext context)
         {
             this._environment = environment;
+            this._context = context;
         }
 
         [HttpPut("UploadImage")]
@@ -242,6 +246,97 @@ namespace WebAPINetCore8.Controllers
 
         }
 
+        [HttpPut("DBMultiUploadImage")]
+        public async Task<IActionResult> DBMultiUploadImage(IFormFileCollection filecollection, string productcode)
+        {
+            APIResponse response = new APIResponse();
+            int passcount = 0 ; int errorcount = 0;
+            try
+            {
+                foreach (var file in filecollection)
+                {
+                    using(MemoryStream stream = new MemoryStream())
+                    {
+                        await file.CopyToAsync(stream);
+                        this._context.TblProductimages.Add(new Repos.Models.TblProductimage()
+                        {
+                            Productcode = productcode,
+                            Productimage = stream.ToArray()
+                        });
+
+                        await this._context.SaveChangesAsync();
+                        passcount++;
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                errorcount++;
+                response.Errormessage = ex.Message;
+            }
+            response.ResponseCode = 200;
+            response.Result = passcount + " Files uploaded &" + errorcount + " files failed";
+            return Ok(response);
+        }
+
+
+
+        [HttpGet("GetDBMultiImage")]
+        public async Task<IActionResult> GetDBMultiImage(string productcode)
+        {
+            List<string> Imageurl = new List<string>();
+            //string hosturl = $"{this.Request.Scheme}://{this.Request.Host}{this.Request.PathBase}";
+            try
+            {
+                var _productimage = this._context.TblProductimages.Where(item => item.Productcode == productcode).ToList();
+                if (_productimage != null && _productimage.Count > 0)
+                {
+                    _productimage.ForEach(item =>
+                    {
+                        Imageurl.Add(Convert.ToBase64String(item.Productimage));
+                    });
+                }
+                else
+                {
+                    return NotFound();
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+            }
+            return Ok(Imageurl);
+
+        }
+
+
+        [HttpGet("dbdownload")]
+        public async Task<IActionResult> dbdownload(string productcode)
+        {
+
+            try
+            {
+
+                var _productimage = await this._context.TblProductimages.FirstOrDefaultAsync(item => item.Productcode == productcode);
+                if (_productimage != null)
+                {
+                    return File(_productimage.Productimage, "image/png", productcode + ".png");
+                }
+
+                else
+                {
+                    return NotFound();
+                }
+            }
+            catch (Exception ex)
+            {
+                return NotFound();
+            }
+
+
+        }
 
 
         [NonAction]

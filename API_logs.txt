@@ -1207,3 +1207,296 @@ WHERE [t].[refreshtoken] = @__token_RefreshToken_0
 2024-01-04 17:55:14.953 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateRefreshToken (WebAPINetCore8) in 77.3541ms
 2024-01-04 17:55:14.953 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateRefreshToken (WebAPINetCore8)'
 2024-01-04 17:55:14.954 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Authorize/GenerateRefreshToken - 401 null application/problem+json; charset=utf-8 82.5375ms
+2024-01-04 23:50:01.401 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-04 23:50:02.042 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-04 23:50:02.046 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-04 23:50:02.052 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-04 23:50:02.056 +08:00 [INF] Hosting environment: Development
+2024-01-04 23:50:02.060 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-04 23:50:02.834 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-04 23:50:03.324 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 495.0478ms
+2024-01-04 23:50:03.374 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-04 23:50:03.383 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 9.8647ms
+2024-01-04 23:50:03.470 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-04 23:50:03.520 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.4729ms
+2024-01-04 23:50:04.041 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-04 23:50:04.248 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 208.0723ms
+2024-01-04 23:50:34.856 +08:00 [INF] Request starting HTTP/2 PUT https://localhost:7095/api/Product/UploadImage?productcode=02323 - multipart/form-data; boundary=----WebKitFormBoundarytR02Tz8kCkiAqaXV 113420
+2024-01-04 23:50:34.861 +08:00 [INF] CORS policy execution successful.
+2024-01-04 23:50:35.196 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.UploadImage (WebAPINetCore8)'
+2024-01-04 23:50:35.214 +08:00 [INF] Route matched with {action = "UploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadImage(Microsoft.AspNetCore.Http.IFormFile, System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-04 23:50:35.347 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Helper.APIResponse'.
+2024-01-04 23:50:35.358 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.UploadImage (WebAPINetCore8) in 140.1454ms
+2024-01-04 23:50:35.359 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.UploadImage (WebAPINetCore8)'
+2024-01-04 23:50:35.361 +08:00 [INF] Request finished HTTP/2 PUT https://localhost:7095/api/Product/UploadImage?productcode=02323 - 200 null application/json; charset=utf-8 504.606ms
+2024-01-05 00:27:22.100 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-05 00:27:22.415 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-05 00:27:22.419 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-05 00:27:22.424 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 00:27:22.427 +08:00 [INF] Hosting environment: Development
+2024-01-05 00:27:22.429 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-05 00:27:29.186 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-05 00:27:29.441 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 260.8879ms
+2024-01-05 00:27:29.525 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 00:27:29.525 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-05 00:27:29.530 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.7948ms
+2024-01-05 00:27:29.562 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.1341ms
+2024-01-05 00:27:29.922 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-05 00:27:30.058 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 135.8622ms
+2024-01-05 00:30:01.272 +08:00 [INF] Request starting HTTP/2 PUT https://localhost:7095/api/Product/MultiUploadImage?productcode=2323 - multipart/form-data; boundary=----WebKitFormBoundaryRcBfK4AAL8a40mzB 474732
+2024-01-05 00:30:01.281 +08:00 [INF] CORS policy execution successful.
+2024-01-05 00:30:01.361 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.MultiUploadImage (WebAPINetCore8)'
+2024-01-05 00:30:01.381 +08:00 [INF] Route matched with {action = "MultiUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultiUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:30:01.468 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Helper.APIResponse'.
+2024-01-05 00:30:01.477 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.MultiUploadImage (WebAPINetCore8) in 92.3266ms
+2024-01-05 00:30:01.477 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.MultiUploadImage (WebAPINetCore8)'
+2024-01-05 00:30:01.480 +08:00 [INF] Request finished HTTP/2 PUT https://localhost:7095/api/Product/MultiUploadImage?productcode=2323 - 200 null application/json; charset=utf-8 208.0408ms
+2024-01-05 00:41:19.560 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-05 00:41:19.835 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-05 00:41:19.839 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-05 00:41:19.845 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 00:41:19.849 +08:00 [INF] Hosting environment: Development
+2024-01-05 00:41:19.851 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-05 00:41:30.027 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-05 00:41:30.234 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 209.5636ms
+2024-01-05 00:41:30.274 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 00:41:30.279 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 5.5232ms
+2024-01-05 00:41:30.294 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-05 00:41:30.342 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.4026ms
+2024-01-05 00:41:30.787 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-05 00:41:30.933 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 147.3486ms
+2024-01-05 00:42:57.861 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - null null
+2024-01-05 00:42:57.958 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:42:57.974 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:42:57.998 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:42:58.013 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 35.2773ms
+2024-01-05 00:42:58.014 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:42:58.014 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - 404 null application/problem+json; charset=utf-8 153.852ms
+2024-01-05 00:43:40.873 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - null null
+2024-01-05 00:43:40.881 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:40.882 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:43:40.890 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:43:40.890 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 7.9027ms
+2024-01-05 00:43:40.890 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:40.890 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - 404 null application/problem+json; charset=utf-8 17.3914ms
+2024-01-05 00:43:42.514 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - null null
+2024-01-05 00:43:42.527 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:42.527 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:43:42.527 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:43:42.528 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.7382ms
+2024-01-05 00:43:42.528 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:42.528 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - 404 null application/problem+json; charset=utf-8 14.1766ms
+2024-01-05 00:43:43.829 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - null null
+2024-01-05 00:43:43.830 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:43.830 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:43:43.831 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:43:43.831 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.5751ms
+2024-01-05 00:43:43.831 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:43.831 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - 404 null application/problem+json; charset=utf-8 2.1105ms
+2024-01-05 00:43:44.621 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - null null
+2024-01-05 00:43:44.622 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:44.622 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:43:44.622 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:43:44.622 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.4504ms
+2024-01-05 00:43:44.622 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:44.623 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - 404 null application/problem+json; charset=utf-8 1.4613ms
+2024-01-05 00:43:45.438 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - null null
+2024-01-05 00:43:45.438 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:45.439 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:43:45.439 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:43:45.439 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.5593ms
+2024-01-05 00:43:45.439 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:45.440 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - 404 null application/problem+json; charset=utf-8 1.7239ms
+2024-01-05 00:43:50.455 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - null null
+2024-01-05 00:43:50.455 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:50.455 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:43:50.456 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:43:50.456 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.4919ms
+2024-01-05 00:43:50.456 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:50.456 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - 404 null application/problem+json; charset=utf-8 1.4071ms
+2024-01-05 00:43:51.044 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - null null
+2024-01-05 00:43:51.045 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:51.045 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:43:51.045 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:43:51.046 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.7422ms
+2024-01-05 00:43:51.046 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:51.046 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=GA%20latest - 404 null application/problem+json; charset=utf-8 1.7486ms
+2024-01-05 00:43:54.037 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - null null
+2024-01-05 00:43:54.037 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:54.037 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:43:54.038 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:43:54.038 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.4327ms
+2024-01-05 00:43:54.038 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:54.038 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - 404 null application/problem+json; charset=utf-8 1.7492ms
+2024-01-05 00:43:54.300 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - null null
+2024-01-05 00:43:54.301 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:54.301 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:43:54.302 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:43:54.302 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.7745ms
+2024-01-05 00:43:54.302 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:54.302 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - 404 null application/problem+json; charset=utf-8 2.0951ms
+2024-01-05 00:43:54.821 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - null null
+2024-01-05 00:43:54.822 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:54.822 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:43:54.822 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 00:43:54.822 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.4788ms
+2024-01-05 00:43:54.822 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:43:54.822 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - 404 null application/problem+json; charset=utf-8 1.4525ms
+2024-01-05 00:44:20.101 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=02323 - null null
+2024-01-05 00:44:20.102 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:44:20.102 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:44:20.103 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-05 00:44:20.103 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 1.1381ms
+2024-01-05 00:44:20.103 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:44:20.103 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=02323 - 200 null text/plain; charset=utf-8 2.0964ms
+2024-01-05 00:45:36.964 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-05 00:45:37.220 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-05 00:45:37.222 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-05 00:45:37.225 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 00:45:37.227 +08:00 [INF] Hosting environment: Development
+2024-01-05 00:45:37.228 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-05 00:45:45.022 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-05 00:45:45.255 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 238.831ms
+2024-01-05 00:45:45.800 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 00:45:45.800 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-05 00:45:45.806 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 6.6511ms
+2024-01-05 00:45:45.847 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 47.3459ms
+2024-01-05 00:45:46.199 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-05 00:45:46.351 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 151.868ms
+2024-01-05 00:46:00.436 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=02323 - null null
+2024-01-05 00:46:00.521 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:46:00.537 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:46:00.560 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-05 00:46:00.564 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 22.9114ms
+2024-01-05 00:46:00.564 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:46:00.564 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=02323 - 200 null text/plain; charset=utf-8 128.8877ms
+2024-01-05 00:46:04.467 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=02323 - null null
+2024-01-05 00:46:04.479 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:46:04.480 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 00:46:04.484 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-05 00:46:04.486 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 5.9092ms
+2024-01-05 00:46:04.486 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 00:46:04.486 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=02323 - 200 null text/plain; charset=utf-8 19.5055ms
+2024-01-05 00:46:04.826 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/favicon.ico - null null
+2024-01-05 00:46:04.844 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/favicon.ico - 404 0 null 18.6279ms
+2024-01-05 00:46:04.846 +08:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7095/favicon.ico, Response status code: 404
+2024-01-05 01:01:49.552 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-05 01:01:49.811 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-05 01:01:49.814 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-05 01:01:49.821 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 01:01:49.825 +08:00 [INF] Hosting environment: Development
+2024-01-05 01:01:49.827 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-05 01:01:50.317 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-05 01:01:50.548 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 233.4295ms
+2024-01-05 01:01:50.583 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 01:01:50.591 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 7.3713ms
+2024-01-05 01:01:50.617 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-05 01:01:50.654 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.0891ms
+2024-01-05 01:01:51.013 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-05 01:01:51.149 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 136.3024ms
+2024-01-05 01:02:22.028 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - null null
+2024-01-05 01:02:22.115 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 01:02:22.130 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 01:02:22.156 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 01:02:22.171 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 38.3396ms
+2024-01-05 01:02:22.172 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 01:02:22.172 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - 404 null application/problem+json; charset=utf-8 144.3694ms
+2024-01-05 01:02:43.734 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - null null
+2024-01-05 01:02:43.737 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 01:02:43.746 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 01:02:43.747 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 01:02:43.747 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 1.1262ms
+2024-01-05 01:02:43.748 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 01:02:43.748 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - 404 null application/problem+json; charset=utf-8 14.2001ms
+2024-01-05 01:02:44.456 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - null null
+2024-01-05 01:02:44.458 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 01:02:44.458 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 01:02:44.459 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 01:02:44.459 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.5388ms
+2024-01-05 01:02:44.459 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 01:02:44.459 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - 404 null application/problem+json; charset=utf-8 3.0543ms
+2024-01-05 01:02:59.361 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=02323 - null null
+2024-01-05 01:02:59.365 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 01:02:59.365 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 01:02:59.366 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-05 01:02:59.367 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.9764ms
+2024-01-05 01:02:59.367 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 01:02:59.367 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=02323 - 200 null text/plain; charset=utf-8 13.3258ms
+2024-01-05 01:03:20.808 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - null null
+2024-01-05 01:03:20.809 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 01:03:20.809 +08:00 [INF] Route matched with {action = "GetImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 01:03:20.810 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 01:03:20.810 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8) in 0.5787ms
+2024-01-05 01:03:20.810 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetImage (WebAPINetCore8)'
+2024-01-05 01:03:20.810 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetImage?productcode=2323 - 404 null application/problem+json; charset=utf-8 2.0218ms
+2024-01-05 01:04:10.444 +08:00 [INF] Request starting HTTP/2 PUT https://localhost:7095/api/Product/MultiUploadImage?productcode=2323 - multipart/form-data; boundary=----WebKitFormBoundary8Wi8kE9gA1lBpHuW 44
+2024-01-05 01:04:10.448 +08:00 [INF] CORS policy execution successful.
+2024-01-05 01:04:10.450 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.MultiUploadImage (WebAPINetCore8)'
+2024-01-05 01:04:10.458 +08:00 [INF] Route matched with {action = "MultiUploadImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] MultiUploadImage(Microsoft.AspNetCore.Http.IFormFileCollection, System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 01:04:10.473 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Helper.APIResponse'.
+2024-01-05 01:04:10.475 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.MultiUploadImage (WebAPINetCore8) in 16.4951ms
+2024-01-05 01:04:10.475 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.MultiUploadImage (WebAPINetCore8)'
+2024-01-05 01:04:10.475 +08:00 [INF] Request finished HTTP/2 PUT https://localhost:7095/api/Product/MultiUploadImage?productcode=2323 - 200 null application/json; charset=utf-8 30.4751ms
+2024-01-05 01:04:53.349 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/GetMultiImage?productcode=2323 - null null
+2024-01-05 01:04:53.355 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.GetMultiImage (WebAPINetCore8)'
+2024-01-05 01:04:53.358 +08:00 [INF] Route matched with {action = "GetMultiImage", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetMultiImage(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 01:04:53.362 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-01-05 01:04:53.363 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.GetMultiImage (WebAPINetCore8) in 4.6673ms
+2024-01-05 01:04:53.363 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.GetMultiImage (WebAPINetCore8)'
+2024-01-05 01:04:53.363 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/GetMultiImage?productcode=2323 - 200 null application/json; charset=utf-8 14.311ms
+2024-01-05 01:11:24.440 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-05 01:11:24.727 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-05 01:11:24.729 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-05 01:11:24.732 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 01:11:24.734 +08:00 [INF] Hosting environment: Development
+2024-01-05 01:11:24.735 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-05 01:11:31.224 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-05 01:11:31.503 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 286.5319ms
+2024-01-05 01:11:31.546 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 01:11:31.556 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 9.3783ms
+2024-01-05 01:11:31.580 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-05 01:11:31.646 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 66.6448ms
+2024-01-05 01:11:32.054 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-05 01:11:32.199 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 144.8607ms
+2024-01-05 01:11:39.581 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/Download?productcode=2323 - null null
+2024-01-05 01:11:39.665 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.download (WebAPINetCore8)'
+2024-01-05 01:11:39.682 +08:00 [INF] Route matched with {action = "download", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] download(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 01:11:39.703 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 01:11:39.718 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.download (WebAPINetCore8) in 32.7624ms
+2024-01-05 01:11:39.718 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.download (WebAPINetCore8)'
+2024-01-05 01:11:39.719 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/Download?productcode=2323 - 404 null application/problem+json; charset=utf-8 138.2295ms
+2024-01-05 01:11:52.724 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/Download?productcode=02323 - null null
+2024-01-05 01:11:52.727 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.download (WebAPINetCore8)'
+2024-01-05 01:11:52.728 +08:00 [INF] Route matched with {action = "download", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] download(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 01:11:52.742 +08:00 [INF] Executing FileStreamResult, sending file with download name '02323.png' ...
+2024-01-05 01:11:52.753 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.download (WebAPINetCore8) in 24.6565ms
+2024-01-05 01:11:52.753 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.download (WebAPINetCore8)'
+2024-01-05 01:11:52.753 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/Download?productcode=02323 - 200 113235 image/png 28.8268ms
+2024-01-05 09:58:14.209 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-05 09:58:14.776 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-05 09:58:14.778 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-05 09:58:14.782 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 09:58:14.783 +08:00 [INF] Hosting environment: Development
+2024-01-05 09:58:14.785 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-05 09:58:24.594 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-05 09:58:25.122 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 530.524ms
+2024-01-05 09:58:25.137 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 09:58:25.146 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 9.0736ms
+2024-01-05 09:58:25.258 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-05 09:58:25.310 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.3002ms
+2024-01-05 09:58:25.693 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-05 09:58:25.873 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 180.7406ms
+2024-01-05 09:58:38.431 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/remove?productcode=2323 - null null
+2024-01-05 09:58:38.697 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.remove (WebAPINetCore8)'
+2024-01-05 09:58:38.714 +08:00 [INF] Route matched with {action = "remove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] remove(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 09:58:38.762 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-01-05 09:58:38.775 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.remove (WebAPINetCore8) in 57.1473ms
+2024-01-05 09:58:38.775 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.remove (WebAPINetCore8)'
+2024-01-05 09:58:38.775 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/remove?productcode=2323 - 404 null application/problem+json; charset=utf-8 344.5989ms
+2024-01-05 09:58:52.574 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Product/remove?productcode=02323 - null null
+2024-01-05 09:58:52.579 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.ProductController.remove (WebAPINetCore8)'
+2024-01-05 09:58:52.580 +08:00 [INF] Route matched with {action = "remove", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] remove(System.String) on controller WebAPINetCore8.Controllers.ProductController (WebAPINetCore8).
+2024-01-05 09:58:52.585 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2024-01-05 09:58:52.586 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.remove (WebAPINetCore8) in 5.2357ms
+2024-01-05 09:58:52.586 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.remove (WebAPINetCore8)'
+2024-01-05 09:58:52.586 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/remove?productcode=02323 - 200 null text/plain; charset=utf-8 11.9902ms

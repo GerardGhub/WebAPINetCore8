@@ -1569,3 +1569,65 @@ WHERE [t].[productcode] = @__productcode_0
 2024-01-05 11:14:36.729 +08:00 [INF] Executed action WebAPINetCore8.Controllers.ProductController.dbdownload (WebAPINetCore8) in 47.1817ms
 2024-01-05 11:14:36.729 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.ProductController.dbdownload (WebAPINetCore8)'
 2024-01-05 11:14:36.730 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Product/dbdownload?productcode=2221 - 200 215612 image/png 54.5522ms
+2024-01-05 13:32:23.876 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-05 13:32:24.470 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-05 13:32:24.475 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-05 13:32:24.479 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 13:32:24.481 +08:00 [INF] Hosting environment: Development
+2024-01-05 13:32:24.482 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-05 13:32:35.034 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-05 13:32:35.370 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 338.8272ms
+2024-01-05 13:32:35.390 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 13:32:35.399 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 11.8318ms
+2024-01-05 13:32:35.461 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-05 13:32:35.498 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 37.5463ms
+2024-01-05 13:32:35.893 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-05 13:32:36.117 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 224.0994ms
+2024-01-05 13:33:32.693 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-05 13:33:33.022 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-05 13:33:33.026 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-05 13:33:33.032 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 13:33:33.035 +08:00 [INF] Hosting environment: Development
+2024-01-05 13:33:33.038 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-05 13:33:40.519 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-05 13:33:40.949 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 438.1944ms
+2024-01-05 13:33:40.996 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 13:33:41.003 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 7.4483ms
+2024-01-05 13:33:41.040 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-05 13:33:41.090 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.2243ms
+2024-01-05 13:33:41.512 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-05 13:33:41.673 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 161.1761ms
+2024-01-05 13:34:11.404 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer/Exportexcel - null null
+2024-01-05 13:34:11.568 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.Exportexcel (WebAPINetCore8)'
+2024-01-05 13:34:11.582 +08:00 [INF] Route matched with {action = "Exportexcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Exportexcel() on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-05 13:34:13.455 +08:00 [INF] Executed DbCommand (48ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-01-05 13:34:14.665 +08:00 [INF] Executing FileContentResult, sending file with download name 'Customer.xlsx' ...
+2024-01-05 13:34:14.696 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Exportexcel (WebAPINetCore8) in 3110.2925ms
+2024-01-05 13:34:14.697 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Exportexcel (WebAPINetCore8)'
+2024-01-05 13:34:14.706 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer/Exportexcel - 200 7094 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 3301.9254ms
+2024-01-05 13:37:21.468 +08:00 [INF] User profile is available. Using 'C:\Users\grsingian\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-01-05 13:37:21.787 +08:00 [INF] Now listening on: https://localhost:7095
+2024-01-05 13:37:21.790 +08:00 [INF] Now listening on: http://localhost:5292
+2024-01-05 13:37:21.794 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-05 13:37:21.796 +08:00 [INF] Hosting environment: Development
+2024-01-05 13:37:21.798 +08:00 [INF] Content root path: D:\Gerard Singian Files\Projects\NetCore API\WebAPINetCore8
+2024-01-05 13:37:30.793 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-01-05 13:37:31.024 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 233.7233ms
+2024-01-05 13:37:31.053 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-01-05 13:37:31.059 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 6.7475ms
+2024-01-05 13:37:31.084 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-01-05 13:37:31.141 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 56.9145ms
+2024-01-05 13:37:31.527 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-01-05 13:37:31.726 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 198.698ms
+2024-01-05 13:37:46.327 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer/Exportexcel - null null
+2024-01-05 13:37:46.466 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.Exportexcel (WebAPINetCore8)'
+2024-01-05 13:37:46.478 +08:00 [INF] Route matched with {action = "Exportexcel", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Exportexcel() on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-01-05 13:37:47.745 +08:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-01-05 13:37:48.822 +08:00 [INF] Executing FileContentResult, sending file with download name 'Customer.xlsx' ...
+2024-01-05 13:37:48.835 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.Exportexcel (WebAPINetCore8) in 2350.8692ms
+2024-01-05 13:37:48.835 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.Exportexcel (WebAPINetCore8)'
+2024-01-05 13:37:48.844 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer/Exportexcel - 200 7094 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet 2518.6206ms

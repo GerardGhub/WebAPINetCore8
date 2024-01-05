@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿using ClosedXML.Excel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpLogging;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.RateLimiting;
+using System.Data;
 using WebAPINetCore8.Modal;
 using WebAPINetCore8.Service;
 
@@ -17,9 +19,11 @@ namespace WebAPINetCore8.Controllers
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerService _service;
-        public CustomerController(ICustomerService service)
+        private readonly IWebHostEnvironment _webHostEnvironment;
+        public CustomerController(ICustomerService service, IWebHostEnvironment webHostEnvironment)
         {
             this._service = service;
+            this._webHostEnvironment = webHostEnvironment;
         }
 
         [AllowAnonymous]
@@ -61,13 +65,69 @@ namespace WebAPINetCore8.Controllers
             return Ok(data);    
         }
 
-        [HttpDelete("Delete")]
+        [HttpDelete("Remove")]
 
         public async Task<IActionResult> Remove(string code)
         {
             var data = await this._service.Remove(code);
             return Ok(data);
         }
+
+        [AllowAnonymous]
+        [HttpGet("Exportexcel")]
+        public async Task<IActionResult> Exportexcel()
+        {
+            try
+            {
+                string Filepath = GetFilepath();
+                string excelpath = Filepath +"\\customerinfo.xlsx";
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Code", typeof(string));
+                dt.Columns.Add("Name", typeof(string));
+                dt.Columns.Add("Email", typeof(string));
+                dt.Columns.Add("Phone", typeof(string));
+                dt.Columns.Add("CreditLimit", typeof(int));
+                var data = await this._service.Getall();
+                if(data != null && data.Count > 0)
+                {
+                    data.ForEach(item =>
+                    {
+                        dt.Rows.Add(item.Code, item.Name, item.Email, item.Phone, item.Creditlimit);
+                    });
+                }
+
+                using (XLWorkbook wb = new XLWorkbook()) 
+                {
+                wb.AddWorksheet(dt, "Customer Info");
+                    using(MemoryStream ms = new MemoryStream())
+                    {
+                        wb.SaveAs(ms);
+
+                        if (System.IO.File.Exists(excelpath))
+                        {
+                            System.IO.File.Delete(excelpath);
+                        }
+                        wb.SaveAs(excelpath);
+                        return File(ms.ToArray(), "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", "Customer.xlsx");
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+
+                return NotFound();
+            }
+        }
+
+
+
+        [NonAction]
+        private string GetFilepath()
+        {
+            return this._webHostEnvironment.WebRootPath + "\\Export";
+        }
+
 
     }
 }

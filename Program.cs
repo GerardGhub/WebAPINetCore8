@@ -12,6 +12,8 @@ using WebAPINetCore8.Modal;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
+using Microsoft.AspNetCore.OpenApi;
+using WebAPINetCore8.Repos.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -108,7 +110,58 @@ builder.Services.Configure<JwtSettings>(_jwtsetting);
 CultureInfo.DefaultThreadCurrentCulture = CultureInfo.CreateSpecificCulture("en-US");
 CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.CreateSpecificCulture("en-US");
 
+
+
 var app = builder.Build();
+
+app.MapGet("/minimalapi", () => "Gerard Singian");
+
+app.MapGet("/getchannel", (string channelname) => "Welcome to " + channelname).WithOpenApi(opt =>
+{
+    var parameter = opt.Parameters[0];
+    parameter.Description = "Enter Channel Name";
+    return opt;
+});
+
+
+app.MapGet("/getcustomer", async (LearndataContext db) =>
+{
+    return await db.TblCustomers.ToListAsync();
+});
+
+
+app.MapGet("/getcustomerbycode/{code}", async (LearndataContext db, string code) =>
+{
+    return await db.TblCustomers.FindAsync(code);
+});
+
+app.MapPost("/createcustomer", async (LearndataContext db, TblCustomer customer) =>
+{
+    await db.TblCustomers.AddAsync(customer);
+    await db.SaveChangesAsync();
+});
+
+app.MapPut("/updatecustomer/{code}", async (LearndataContext db, TblCustomer customer, string code) =>
+{
+    var existdata = await db.TblCustomers.FindAsync(code);
+    if (existdata != null)
+    {
+        existdata.Name = customer.Name;
+        existdata.Email = customer.Email;
+    }
+    await db.SaveChangesAsync();
+});
+
+app.MapDelete("removecustomer/{code}", async (LearndataContext db, string code) =>
+{
+    var existdata = await db.TblCustomers.FindAsync(code);
+    if (existdata != null)
+    {
+        db.TblCustomers.Remove(existdata);
+    }
+    await db.SaveChangesAsync();
+});
+
 
 app.UseRateLimiter();
 // Configure the HTTP request pipeline.

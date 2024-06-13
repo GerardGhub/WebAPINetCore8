@@ -108,3 +108,8 @@ CREATE TABLE [dbo].[tbl_user](
 GO
 SET ANSI_PADDING OFF
 GO
+
+
+
+username: code 
+password: usual

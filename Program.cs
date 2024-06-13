@@ -7,12 +7,10 @@ using AutoMapper;
 using WebAPINetCore8.Helper;
 using Serilog;
 using Microsoft.AspNetCore.RateLimiting;
-using Microsoft.AspNetCore.Authentication;
 using WebAPINetCore8.Modal;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
-using Microsoft.AspNetCore.OpenApi;
 using WebAPINetCore8.Repos.Models;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -164,6 +162,8 @@ app.MapDelete("removecustomer/{code}", async (LearndataContext db, string code) 
 
 
 app.UseRateLimiter();
+
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -172,7 +172,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseStaticFiles();
-//app.UseCors("corspolicy");
+
 
 app.UseCors();
 

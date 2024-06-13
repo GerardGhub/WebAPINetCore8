@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity.Client;
 using WebAPINetCore8.Repos.Models;
 
 namespace WebAPINetCore8.Repos;

@@ -9,6 +9,9 @@ namespace WebAPINetCore8.Helper
         public AutoMapperHandler() {
             CreateMap<TblCustomer, CustomerModal>().ForMember(item => item.Statusname, opt => opt.MapFrom(
                 item => (item.IsActive != null && item.IsActive.Value) ? "Active" : "In active")).ReverseMap();
+
+            CreateMap<TblUser, UserModal>().ForMember(item => item.Code, opt => opt.MapFrom(
+       item => (item.Isactive != null && item.Isactive.Value) ? "Active" : "In active")).ReverseMap();
         }
     }
 }

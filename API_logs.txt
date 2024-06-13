@@ -1,0 +1,419 @@
+2024-03-19 15:42:47.766 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-03-19 15:42:48.674 +08:00 [INF] Now listening on: https://localhost:7095
+2024-03-19 15:42:48.676 +08:00 [INF] Now listening on: http://localhost:5292
+2024-03-19 15:42:48.778 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-19 15:42:48.780 +08:00 [INF] Hosting environment: Development
+2024-03-19 15:42:48.783 +08:00 [INF] Content root path: D:\2024\Projects\2024\Nihira\NetCore\WebAPINetCore8-master
+2024-03-19 15:42:49.540 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger - null null
+2024-03-19 15:42:49.876 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger - 301 0 null 341.3093ms
+2024-03-19 15:42:49.886 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-03-19 15:42:49.973 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 86.9303ms
+2024-03-19 15:42:50.022 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/swagger-ui.css - null null
+2024-03-19 15:42:50.022 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/swagger-ui-standalone-preset.js - null null
+2024-03-19 15:42:50.022 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/swagger-ui-bundle.js - null null
+2024-03-19 15:42:50.023 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-03-19 15:42:50.045 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 21.805ms
+2024-03-19 15:42:50.082 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-03-19 15:42:50.090 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-03-19 15:42:50.099 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/swagger-ui.css - 200 144929 text/css 77.6375ms
+2024-03-19 15:42:50.110 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-03-19 15:42:50.110 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 87.8615ms
+2024-03-19 15:42:50.163 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-03-19 15:42:50.163 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 140.8725ms
+2024-03-19 15:42:50.205 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 123.1319ms
+2024-03-19 15:42:50.806 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-03-19 15:42:50.888 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/favicon-32x32.png - null null
+2024-03-19 15:42:50.889 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-03-19 15:42:50.889 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/favicon-32x32.png - 200 628 image/png 1.7423ms
+2024-03-19 15:42:51.059 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 253.449ms
+2024-04-17 00:16:05.231 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-17 00:16:07.895 +08:00 [INF] Now listening on: https://localhost:7095
+2024-04-17 00:16:07.898 +08:00 [INF] Now listening on: http://localhost:5292
+2024-04-17 00:16:08.023 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-17 00:16:08.025 +08:00 [INF] Hosting environment: Development
+2024-04-17 00:16:08.028 +08:00 [INF] Content root path: D:\2024\Projects\2024\Nihira\NetCore\WebAPINetCore8-master
+2024-04-17 00:16:10.085 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger - null null
+2024-04-17 00:16:10.751 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger - 301 0 null 772.8371ms
+2024-04-17 00:16:10.760 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-04-17 00:16:10.962 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 202.0501ms
+2024-04-17 00:16:10.976 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/swagger-ui.css - null null
+2024-04-17 00:16:10.977 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/swagger-ui-bundle.js - null null
+2024-04-17 00:16:10.977 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/swagger-ui-standalone-preset.js - null null
+2024-04-17 00:16:10.977 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-17 00:16:10.995 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 17.5294ms
+2024-04-17 00:16:11.061 +08:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-04-17 00:16:11.061 +08:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-04-17 00:16:11.062 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/swagger-ui.css - 200 144929 text/css 86.2562ms
+2024-04-17 00:16:11.062 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/swagger-ui-standalone-preset.js - 200 312163 text/javascript 85.0607ms
+2024-04-17 00:16:11.089 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-04-17 00:16:11.108 +08:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-04-17 00:16:11.108 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/swagger-ui-bundle.js - 200 1061536 text/javascript 131.0578ms
+2024-04-17 00:16:11.315 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 225.8547ms
+2024-04-17 00:16:11.828 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-04-17 00:16:11.972 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/favicon-32x32.png - null null
+2024-04-17 00:16:11.973 +08:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-04-17 00:16:11.974 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/favicon-32x32.png - 200 628 image/png 2.6475ms
+2024-04-17 00:16:12.239 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 412.0194ms
+2024-04-17 00:17:06.982 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-04-17 00:17:09.357 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-04-17 00:17:09.383 +08:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-04-17 00:17:16.564 +08:00 [INF] Executed DbCommand (163ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-17 00:17:16.873 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebAPINetCore8.Modal.CustomerModal, WebAPINetCore8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-17 00:17:16.888 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8) in 7499.148ms
+2024-04-17 00:17:16.889 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-04-17 00:17:16.896 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer/GetAll - 200 null application/json; charset=utf-8 9914.9219ms
+2024-04-17 00:17:40.355 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer/Getbycode?code=1 - null null
+2024-04-17 00:17:40.386 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-17 00:17:40.391 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-04-17 00:17:40.391 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer/Getbycode?code=1 - 401 0 null 36.8198ms
+2024-04-17 00:20:01.106 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Customer/Create - application/json 165
+2024-04-17 00:20:01.159 +08:00 [INF] CORS policy execution successful.
+2024-04-17 00:20:01.230 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-17 00:20:01.231 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-04-17 00:20:01.233 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Customer/Create - 401 0 null 126.2243ms
+2024-04-17 00:20:18.160 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-04-17 00:20:18.161 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-04-17 00:20:18.162 +08:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-04-17 00:20:18.271 +08:00 [INF] Executed DbCommand (77ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-17 00:20:18.274 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebAPINetCore8.Modal.CustomerModal, WebAPINetCore8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-17 00:20:18.274 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8) in 112.1089ms
+2024-04-17 00:20:18.274 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-04-17 00:20:18.274 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer/GetAll - 200 null application/json; charset=utf-8 114.641ms
+2024-04-17 00:20:23.835 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer/GetAll - null null
+2024-04-17 00:20:23.835 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-04-17 00:20:23.835 +08:00 [INF] Route matched with {action = "GetAll", controller = "Customer"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller WebAPINetCore8.Controllers.CustomerController (WebAPINetCore8).
+2024-04-17 00:20:23.912 +08:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-17 00:20:23.913 +08:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[WebAPINetCore8.Modal.CustomerModal, WebAPINetCore8, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-04-17 00:20:23.914 +08:00 [INF] Executed action WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8) in 78.1472ms
+2024-04-17 00:20:23.914 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.CustomerController.GetAll (WebAPINetCore8)'
+2024-04-17 00:20:23.915 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer/GetAll - 200 null application/json; charset=utf-8 79.5162ms
+2024-04-17 00:21:43.744 +08:00 [INF] Request starting HTTP/2 PUT https://localhost:7095/api/Customer/Update?code=1 - application/json 175
+2024-04-17 00:21:43.750 +08:00 [INF] CORS policy execution successful.
+2024-04-17 00:21:43.752 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-17 00:21:43.752 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-04-17 00:21:43.753 +08:00 [INF] Request finished HTTP/2 PUT https://localhost:7095/api/Customer/Update?code=1 - 401 0 null 9.1656ms
+2024-04-17 00:28:03.075 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/minimalapi - null null
+2024-04-17 00:28:03.108 +08:00 [INF] Executing endpoint 'HTTP: GET /minimalapi'
+2024-04-17 00:28:03.216 +08:00 [INF] Executed endpoint 'HTTP: GET /minimalapi'
+2024-04-17 00:28:03.216 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/minimalapi - 200 null text/plain; charset=utf-8 141.6772ms
+2024-04-17 00:28:58.887 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/getchannel?channelname=takla - null null
+2024-04-17 00:28:58.889 +08:00 [INF] Executing endpoint 'HTTP: GET /getchannel'
+2024-04-17 00:28:58.915 +08:00 [INF] Executed endpoint 'HTTP: GET /getchannel'
+2024-04-17 00:28:58.915 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/getchannel?channelname=takla - 200 null text/plain; charset=utf-8 27.8131ms
+2024-04-17 00:29:22.699 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/getcustomer - null null
+2024-04-17 00:29:22.700 +08:00 [INF] Executing endpoint 'HTTP: GET /getcustomer'
+2024-04-17 00:29:22.901 +08:00 [INF] Executed DbCommand (100ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-17 00:29:22.905 +08:00 [INF] Executed endpoint 'HTTP: GET /getcustomer'
+2024-04-17 00:29:22.905 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/getcustomer - 200 null application/json; charset=utf-8 206.063ms
+2024-04-17 00:29:40.902 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/getcustomerbycode/1 - null null
+2024-04-17 00:29:40.902 +08:00 [INF] Executing endpoint 'HTTP: GET /getcustomerbycode/{code}'
+2024-04-17 00:29:41.825 +08:00 [INF] Executed DbCommand (511ms) [Parameters=[@__p_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+WHERE [t].[Code] = @__p_0
+2024-04-17 00:29:41.829 +08:00 [INF] Executed endpoint 'HTTP: GET /getcustomerbycode/{code}'
+2024-04-17 00:29:41.830 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/getcustomerbycode/1 - 200 null application/json; charset=utf-8 927.8831ms
+2024-04-17 00:30:12.131 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/createcustomer - application/json 140
+2024-04-17 00:30:12.131 +08:00 [INF] CORS policy execution successful.
+2024-04-17 00:30:12.131 +08:00 [INF] Executing endpoint 'HTTP: POST /createcustomer'
+2024-04-17 00:30:12.357 +08:00 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p2='?' (Size = 50) (DbType = AnsiString), @p3='?' (DbType = Boolean), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (Size = 50) (DbType = AnsiString), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_customer] ([Code], [Creditlimit], [Email], [IsActive], [Name], [Phone], [Taxcode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2024-04-17 00:30:12.373 +08:00 [INF] Executed endpoint 'HTTP: POST /createcustomer'
+2024-04-17 00:30:12.373 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/createcustomer - 200 0 null 242.2277ms
+2024-04-17 00:30:30.969 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/getcustomer - null null
+2024-04-17 00:30:30.969 +08:00 [INF] Executing endpoint 'HTTP: GET /getcustomer'
+2024-04-17 00:30:31.026 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[Code], [t].[Creditlimit], [t].[Email], [t].[IsActive], [t].[Name], [t].[Phone], [t].[Taxcode]
+FROM [tbl_customer] AS [t]
+2024-04-17 00:30:31.028 +08:00 [INF] Executed endpoint 'HTTP: GET /getcustomer'
+2024-04-17 00:30:31.028 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/getcustomer - 200 null application/json; charset=utf-8 59.183ms
+2024-04-17 00:42:26.880 +08:00 [INF] Executed DbCommand (872ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [test_db];
+2024-04-17 00:42:27.134 +08:00 [INF] Executed DbCommand (221ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [test_db] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2024-04-17 00:42:27.177 +08:00 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-17 00:42:27.514 +08:00 [INF] Executed DbCommand (212ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2024-04-17 00:42:27.517 +08:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2024-04-17 00:42:27.536 +08:00 [INF] Executed DbCommand (16ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2024-04-17 00:42:27.566 +08:00 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2024-04-17 00:42:27.595 +08:00 [INF] Applying migration '20240416164018_InitialCreate'.
+2024-04-17 00:42:27.649 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_customer] (
+    [Code] varchar(50) NOT NULL,
+    [Name] varchar(50) NULL,
+    [Email] varchar(50) NULL,
+    [Phone] varchar(50) NULL,
+    [Creditlimit] decimal(18,2) NULL,
+    [IsActive] bit NULL,
+    [Taxcode] int NULL,
+    CONSTRAINT [PK_tbl_customer] PRIMARY KEY ([Code])
+);
+2024-04-17 00:42:27.662 +08:00 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_product] (
+    [code] varchar(50) NOT NULL,
+    [name] varchar(max) NULL,
+    [price] decimal(18,2) NULL,
+    CONSTRAINT [PK_tbl_product] PRIMARY KEY ([code])
+);
+2024-04-17 00:42:27.666 +08:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_productimage] (
+    [id] int NOT NULL IDENTITY,
+    [productcode] varchar(50) NULL,
+    [productimage] image NULL,
+    CONSTRAINT [PK_tbl_productimage] PRIMARY KEY ([id])
+);
+2024-04-17 00:42:27.669 +08:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_refreshtoken] (
+    [userid] varchar(50) NOT NULL,
+    [tokenid] varchar(50) NULL,
+    [refreshtoken] varchar(max) NULL,
+    CONSTRAINT [PK_tbl_refreshtoken] PRIMARY KEY ([userid])
+);
+2024-04-17 00:42:27.675 +08:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [tbl_user] (
+    [code] varchar(50) NOT NULL,
+    [name] varchar(250) NULL,
+    [email] varchar(100) NULL,
+    [phone] varchar(20) NULL,
+    [password] varchar(50) NULL,
+    [isactive] bit NULL,
+    [role] varchar(50) NULL,
+    CONSTRAINT [PK_tbl_user] PRIMARY KEY ([code])
+);
+2024-04-17 00:42:28.311 +08:00 [INF] Executed DbCommand (18ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20240416164018_InitialCreate', N'8.0.2');
+2024-04-17 01:07:57.632 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-17 01:07:59.517 +08:00 [INF] Now listening on: https://localhost:7095
+2024-04-17 01:07:59.520 +08:00 [INF] Now listening on: http://localhost:5292
+2024-04-17 01:07:59.652 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-17 01:07:59.656 +08:00 [INF] Hosting environment: Development
+2024-04-17 01:07:59.662 +08:00 [INF] Content root path: D:\2024\Projects\2024\Nihira\NetCore\WebAPINetCore8-master
+2024-04-17 01:08:00.250 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-04-17 01:08:01.174 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 926.1383ms
+2024-04-17 01:08:01.265 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-17 01:08:01.268 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-04-17 01:08:01.279 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 14.2644ms
+2024-04-17 01:08:01.376 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 108.1311ms
+2024-04-17 01:08:02.311 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-04-17 01:08:03.395 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 1084.1976ms
+2024-04-17 01:11:08.282 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/User/Create - application/json 163
+2024-04-17 01:11:08.331 +08:00 [INF] CORS policy execution successful.
+2024-04-17 01:11:08.612 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8)'
+2024-04-17 01:11:08.686 +08:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(WebAPINetCore8.Modal.UserModal) on controller WebAPINetCore8.Controllers.UserController (WebAPINetCore8).
+2024-04-17 01:11:08.724 +08:00 [INF] Executed action WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8) in 31.109ms
+2024-04-17 01:11:08.727 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8)'
+2024-04-17 01:11:09.301 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'WebAPINetCore8.Service.IUserService' while attempting to activate 'WebAPINetCore8.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method24(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-17 01:11:09.317 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/User/Create - 500 null text/plain; charset=utf-8 1034.9273ms
+2024-04-17 01:11:47.511 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/User/Create - application/json 160
+2024-04-17 01:11:47.514 +08:00 [INF] CORS policy execution successful.
+2024-04-17 01:11:47.517 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8)'
+2024-04-17 01:11:47.523 +08:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(WebAPINetCore8.Modal.UserModal) on controller WebAPINetCore8.Controllers.UserController (WebAPINetCore8).
+2024-04-17 01:11:47.527 +08:00 [INF] Executed action WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8) in 1.4744ms
+2024-04-17 01:11:47.528 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8)'
+2024-04-17 01:11:47.532 +08:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'WebAPINetCore8.Service.IUserService' while attempting to activate 'WebAPINetCore8.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method24(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-17 01:11:47.534 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/User/Create - 500 null text/plain; charset=utf-8 23.3698ms
+2024-04-17 01:14:50.544 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-17 01:14:51.038 +08:00 [INF] Now listening on: https://localhost:7095
+2024-04-17 01:14:51.051 +08:00 [INF] Now listening on: http://localhost:5292
+2024-04-17 01:14:51.214 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-17 01:14:51.280 +08:00 [INF] Hosting environment: Development
+2024-04-17 01:14:51.374 +08:00 [INF] Content root path: D:\2024\Projects\2024\Nihira\NetCore\WebAPINetCore8-master
+2024-04-17 01:14:52.109 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-04-17 01:14:52.500 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 400.8442ms
+2024-04-17 01:14:52.624 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-17 01:14:52.624 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-04-17 01:14:52.645 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 20.7039ms
+2024-04-17 01:14:52.707 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 83.9742ms
+2024-04-17 01:14:53.272 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-04-17 01:14:53.558 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 287.3122ms
+2024-04-17 01:16:58.952 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/User/Create - application/json 160
+2024-04-17 01:16:58.990 +08:00 [INF] CORS policy execution successful.
+2024-04-17 01:16:59.100 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8)'
+2024-04-17 01:16:59.134 +08:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(WebAPINetCore8.Modal.UserModal) on controller WebAPINetCore8.Controllers.UserController (WebAPINetCore8).
+2024-04-17 01:17:00.059 +08:00 [INF] Create new User
+2024-04-17 01:17:00.869 +08:00 [ERR] Missing type map configuration or unsupported mapping.
+
+Mapping types:
+UserModal -> TblUser
+WebAPINetCore8.Modal.UserModal -> WebAPINetCore8.Repos.Models.TblUser
+2024-04-17 01:17:00.893 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Helper.APIResponse'.
+2024-04-17 01:17:01.016 +08:00 [INF] Executed action WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8) in 1877.7499ms
+2024-04-17 01:17:01.016 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8)'
+2024-04-17 01:17:01.020 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/User/Create - 200 null application/json; charset=utf-8 2067.9965ms
+2024-04-17 01:25:07.976 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-17 01:25:08.637 +08:00 [INF] Now listening on: https://localhost:7095
+2024-04-17 01:25:08.642 +08:00 [INF] Now listening on: http://localhost:5292
+2024-04-17 01:25:08.801 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-17 01:25:08.807 +08:00 [INF] Hosting environment: Development
+2024-04-17 01:25:08.811 +08:00 [INF] Content root path: D:\2024\Projects\2024\Nihira\NetCore\WebAPINetCore8-master
+2024-04-17 01:25:09.404 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-04-17 01:25:09.789 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 394.5438ms
+2024-04-17 01:25:09.861 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-17 01:25:09.871 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 10.4943ms
+2024-04-17 01:25:09.906 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-04-17 01:25:10.041 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 134.7821ms
+2024-04-17 01:25:10.560 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-04-17 01:25:10.826 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 265.9196ms
+2024-04-17 01:26:25.895 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/User/Create - application/json 163
+2024-04-17 01:26:25.902 +08:00 [INF] CORS policy execution successful.
+2024-04-17 01:26:25.987 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8)'
+2024-04-17 01:26:26.020 +08:00 [INF] Route matched with {action = "Create", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(WebAPINetCore8.Modal.UserModal) on controller WebAPINetCore8.Controllers.UserController (WebAPINetCore8).
+2024-04-17 01:26:26.192 +08:00 [INF] Create new User
+2024-04-17 01:26:29.018 +08:00 [INF] Executed DbCommand (336ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 100) (DbType = AnsiString), @p2='?' (DbType = Boolean), @p3='?' (Size = 250) (DbType = AnsiString), @p4='?' (Size = 50) (DbType = AnsiString), @p5='?' (Size = 20) (DbType = AnsiString), @p6='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_user] ([code], [email], [isactive], [name], [password], [phone], [role])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2024-04-17 01:26:29.169 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Helper.APIResponse'.
+2024-04-17 01:26:29.180 +08:00 [INF] Executed action WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8) in 3153.0746ms
+2024-04-17 01:26:29.182 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.UserController.Create (WebAPINetCore8)'
+2024-04-17 01:26:29.195 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/User/Create - 200 null application/json; charset=utf-8 3300.5559ms
+2024-04-17 01:28:02.832 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/api/Customer/Getbycode?code=1 - null null
+2024-04-17 01:28:02.891 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-17 01:28:02.903 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-04-17 01:28:02.904 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/api/Customer/Getbycode?code=1 - 401 0 null 72.1748ms
+2024-04-17 01:28:13.467 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Customer/Create - application/json 150
+2024-04-17 01:28:13.511 +08:00 [INF] CORS policy execution successful.
+2024-04-17 01:28:13.520 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-17 01:28:13.522 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-04-17 01:28:13.523 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Customer/Create - 401 0 null 57.9142ms
+2024-04-17 01:28:56.874 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Customer/Create - application/json 170
+2024-04-17 01:28:56.884 +08:00 [INF] CORS policy execution successful.
+2024-04-17 01:28:56.886 +08:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2024-04-17 01:28:56.887 +08:00 [INF] AuthenticationScheme: Bearer was challenged.
+2024-04-17 01:28:56.887 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Customer/Create - 401 0 null 13.8294ms
+2024-04-17 01:29:24.821 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 66
+2024-04-17 01:29:24.822 +08:00 [INF] CORS policy execution successful.
+2024-04-17 01:29:24.823 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-04-17 01:29:24.828 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-04-17 01:29:25.853 +08:00 [INF] Executed DbCommand (124ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-04-17 01:29:25.944 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-04-17 01:29:25.989 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 1160.2762ms
+2024-04-17 01:29:25.989 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-04-17 01:29:25.989 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Authorize/GenerateToken - 401 null application/problem+json; charset=utf-8 1168.0864ms
+2024-04-17 01:30:46.263 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 66
+2024-04-17 01:30:46.266 +08:00 [INF] CORS policy execution successful.
+2024-04-17 01:30:46.266 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-04-17 01:30:46.267 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-04-17 01:30:46.357 +08:00 [INF] Executed DbCommand (37ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-04-17 01:30:46.358 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-04-17 01:30:46.359 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 91.5748ms
+2024-04-17 01:30:46.359 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-04-17 01:30:46.359 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Authorize/GenerateToken - 401 null application/problem+json; charset=utf-8 96.2674ms
+2024-04-17 01:31:23.197 +08:00 [INF] User profile is available. Using 'C:\Users\admin\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-17 01:31:23.693 +08:00 [INF] Now listening on: https://localhost:7095
+2024-04-17 01:31:23.698 +08:00 [INF] Now listening on: http://localhost:5292
+2024-04-17 01:31:23.841 +08:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-17 01:31:23.844 +08:00 [INF] Hosting environment: Development
+2024-04-17 01:31:23.847 +08:00 [INF] Content root path: D:\2024\Projects\2024\Nihira\NetCore\WebAPINetCore8-master
+2024-04-17 01:31:24.634 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/index.html - null null
+2024-04-17 01:31:24.931 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/index.html - 200 null text/html;charset=utf-8 311.4861ms
+2024-04-17 01:31:25.085 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-17 01:31:25.110 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/_vs/browserLink - null null
+2024-04-17 01:31:25.119 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_framework/aspnetcore-browser-refresh.js - 200 13764 application/javascript; charset=utf-8 35.9443ms
+2024-04-17 01:31:25.217 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/_vs/browserLink - 200 null text/javascript; charset=UTF-8 106.9664ms
+2024-04-17 01:31:25.819 +08:00 [INF] Request starting HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - null null
+2024-04-17 01:31:26.159 +08:00 [INF] Request finished HTTP/2 GET https://localhost:7095/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 340.6727ms
+2024-04-17 01:31:35.399 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 66
+2024-04-17 01:31:35.408 +08:00 [INF] CORS policy execution successful.
+2024-04-17 01:31:35.560 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-04-17 01:31:35.643 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-04-17 01:31:38.292 +08:00 [INF] Executed DbCommand (79ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-04-17 01:31:38.344 +08:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2024-04-17 01:31:38.385 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 2733.4246ms
+2024-04-17 01:31:38.386 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-04-17 01:31:38.399 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Authorize/GenerateToken - 401 null application/problem+json; charset=utf-8 3000.3344ms
+2024-04-17 01:32:52.483 +08:00 [INF] Request starting HTTP/2 POST https://localhost:7095/api/Authorize/GenerateToken - application/json 48
+2024-04-17 01:32:52.486 +08:00 [INF] CORS policy execution successful.
+2024-04-17 01:32:52.488 +08:00 [INF] Executing endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-04-17 01:32:52.488 +08:00 [INF] Route matched with {action = "GenerateToken", controller = "Authorize"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GenerateToken(WebAPINetCore8.Modal.UserCred) on controller WebAPINetCore8.Controllers.AuthorizeController (WebAPINetCore8).
+2024-04-17 01:32:52.553 +08:00 [INF] Executed DbCommand (24ms) [Parameters=[@__userCred_Username_0='?' (Size = 50) (DbType = AnsiString), @__userCred_Password_1='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[code], [t].[email], [t].[isactive], [t].[name], [t].[password], [t].[phone], [t].[role]
+FROM [tbl_user] AS [t]
+WHERE [t].[code] = @__userCred_Username_0 AND [t].[password] = @__userCred_Password_1
+2024-04-17 01:32:53.066 +08:00 [INF] Executed DbCommand (3ms) [Parameters=[@__username_0='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [t].[userid], [t].[refreshtoken], [t].[tokenid]
+FROM [tbl_refreshtoken] AS [t]
+WHERE [t].[userid] = @__username_0
+2024-04-17 01:32:53.354 +08:00 [INF] Executed DbCommand (26ms) [Parameters=[@p0='?' (Size = 50) (DbType = AnsiString), @p1='?' (Size = 8000) (DbType = AnsiString), @p2='?' (Size = 50) (DbType = AnsiString)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [tbl_refreshtoken] ([userid], [refreshtoken], [tokenid])
+VALUES (@p0, @p1, @p2);
+2024-04-17 01:32:53.374 +08:00 [INF] Executing OkObjectResult, writing value of type 'WebAPINetCore8.Modal.TokenResponse'.
+2024-04-17 01:32:53.375 +08:00 [INF] Executed action WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8) in 886.6939ms
+2024-04-17 01:32:53.375 +08:00 [INF] Executed endpoint 'WebAPINetCore8.Controllers.AuthorizeController.GenerateToken (WebAPINetCore8)'
+2024-04-17 01:32:53.375 +08:00 [INF] Request finished HTTP/2 POST https://localhost:7095/api/Authorize/GenerateToken - 200 null application/json; charset=utf-8 892.9491ms
